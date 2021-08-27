@@ -12,7 +12,7 @@
     <title>Prog Lang Learn</title>
 
     <style>
-      body, #dashboard, #sidebar{
+      body, #dashboard{
         min-height: 100vh;
       }
       .page{
@@ -22,18 +22,21 @@
       #footer{
         height: 50px;
       }
+      img{
+        margin: 15px;
+      }
     </style>
   </head>
   <body>
     <div class="container-fluid ">
-      <div id="dashboard" class="row">
-        <div class="col-md-3 col-sm-12 p-0">
+      <div id="dashboard" class="row justify-content-start">
+        <div class="col-lg-auto col-12 p-0">
           <div id="sidebar" class="flex-shrink-0 p-3 bg-white" style="width: 100%;">
             <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
               <img src="assets/java-svgrepo-com.svg" height="30px">
               <span class="fs-5 fw-semibold ps-2">Programming Language Learning</span>
             </a>
-            <ul class="list-unstyled ps-0">
+            <ul class="list-unstyled ps-0 sticky-top">
               <li class="mb-1">
                 <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
                   Home
@@ -96,7 +99,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="container h-100">
+          <div class="container-fluid">
             <br>
             <!-- Introduction Section -->
             <div id="introduction" class="row align-items-start">
@@ -115,6 +118,7 @@
               <h3>Program Comprehension</h3>
               <p>Program comprehension is a theoretical construct to describe the different aspects of a mental representation for a program and how data is transformed from a set of input to output values, a common problem encountered in procedural programming tasks. </p>
               <p>A learner builds a mental representation by engaging in several cognitive and metacognitive processes that include but are not limited to the following:</p>
+              <div class="table-responsive">
               <table class="table d-inline">
                 <thead>
                   <tr>
@@ -136,6 +140,7 @@
                   </tr>
                 </tbody>
               </table>
+            </div>
               <p>In doing so, a learner applies their knowledge, which is different from knowledge of the syntax of a given language, the semantics of the expression, or its function in the context of solving a problem. This involves cognitive operations on information to transform it into a certain product, like translating code from pseudocode statements. The resulting product can then be evaluated by the learner against their own standards for coherence in understanding the task as well as clarity and quality of their code.</p>
               <p>This site is meant to serve as a resource for you to review examples of these products and how you can design instruction that supports students in engaging in these cognitive and metacognitive processes by reviewing resources for answering common questions, marking assignements and giving feedback, as well as listing examples, methods, and content that can be used to support students during lab demonstrations.</p>
               <p>The term <strong>instructional method</strong> refers to any verbal utterances (i.e., auditory information processing) between tutor and learner that is most suitable towards attaining an instructional goal or applying a certain type of knowledge. For instance, a tutor may demonstrate to the learner how to trace execution of a program by saying out loud how data values stored in memory are modified from one statement to the next while reading a program.</p>
@@ -144,6 +149,8 @@
               <p>Another concern that is distinct from designing auditory/visual information relates to how to sequence information. In CSCI 1105, you may want to sequence examples and problems to provide instruction on reading prior to writing, and writing prior to evaluating. The same example may be used to illustrate how to trace, then explain each statement, followed by an opportunity to practice and receive feedback. The same can be said of examples of how to write a solution, covering how to design prior to generate code. One approach involves the creation of a lesson plan to keep track of each component, as in the following:</p>
               <h6>Example #1</h6>
               <p>This is one of my favorite combinations for introducing a new type of statement, so that students are exposed simultaneously in one slide to the syntax, semantic, and function of a statement.</p>
+              <p>Table. Lesson Plan Example</p>
+              <div class="table-responsive">
               <table class="table table-sm table-bordered d-inline">
                 <tr>
                   <th>Step</th>
@@ -160,9 +167,13 @@
                   <td>Memory Diagram, Pseudocode, Code Example</td>
                 </tr>
               </table>
-              <p><img src="assets/slide1.JPG" height="300"></p>
+            </div>
+              <p><img class="img-fluid" src="assets/slide1.JPG" style="max-height:350px;"></p>
+              <p>Figure. Slide Example</p>
               <h6>Example #2</h6>
               <p>This is another common combination used for teaching how to read a program by tracing, especially for concepts that lend themselves to common misconceptions (i.e., local variables with reference to arrays). The instructor can model how to trace, then prompt the learner to predict the following step on a problematic statement in order to coach them by proving feedback.</p>
+              <p>Table. Lesson Plan Example</p>
+              <div class="table-responsive">
               <table class="table table-sm table-bordered d-inline">
                 <tr>
                   <th>Step</th>
@@ -186,8 +197,10 @@
                   <td>Faded Worked Example, Subgoal and Variable Role Annotations, Memory Diagram</td>
                 </tr>
               </table>
-              <p><img src="assets/slide2.JPG" height="300"></p>
+            </div>
+              <p><img class="img-fluid" src="assets/slide2.JPG" style="max-height:350px;"></p>
               <br>
+              <p>Figure. Slide Example</p>
             </div>
             <!-- Reading Section -->
             <div id="tracing" class="row align-items-start">
@@ -240,6 +253,7 @@
                 <p><strong>Code: </strong><br>/* <br>Memory<br> a | 2<br>   b | 3 <br>  c | 1<br>*/</p>
                 <h6>Tracing Tables</h6>
                 <p>Table listing variables and values filled or partially filled with pen and paper or in a digital format. Students may attempt to fill a problem step that is faded out from the worked example.</p>
+                <div class="table-responsive">
                 <table class="table table-sm table-bordered d-inline">
                   <tr>
                     <th>a</th>
@@ -252,6 +266,7 @@
                     <td class="p-3"><del>3</del><br>1</td>
                   </tr>
                 </table>
+              </div>
                 <br>
                 <a href="https://youtu.be/TZss5ukwN8s">Example Tracing Table</a>
                 <h6>Control Flow as Graph</h6>
@@ -435,6 +450,7 @@
                 <p>Inline comments limited to single- or multi-line content in the text editor and involve evaluating different statements types while reading programs. <!--Students may attempt to fill a problem step that is faded out from the worked example.--></p>
                 <p><strong>Code:</strong><br>// INPUT AREA<br>// store temp value <br>a = 1;<br>// store most-wanted values<br> b = 2; <br>c = 3;<br>// Diagram the order of assignment statements for the variable swap algorithm<br>...</p>
                 <h6>Table. Common Subgoal Annotations</h6>
+                <div class="table-responsive">
                 <table class="table table-bordered">
                   <thead>
                     <tr>
@@ -608,6 +624,7 @@
                     </tr>
                   </tbody>
                 </table>
+              </div>
                 <a href="https://www.cs1subgoals.org/how-do-i-use-subgoals/">Example for How to Use Subgoals</a>
                 <h6>References</h6>
                 <p>Lauren E. Margulieux, Briana B. Morrison, and Adrienne Decker. 2019. Design and Pilot Testing of Subgoal Labeled Worked Examples for Five Core Concepts in CS1. In <i>Proceedings of the 2019 ACM Conference on Innovation and Technology in Computer Science Education</i> (<i>ITiCSE '19</i>). Association for Computing Machinery, New York, NY, USA, 548–554. DOI:https://doi.org/10.1145/3304221.3319756</p>
@@ -619,6 +636,7 @@
                 <p><strong>Code:</strong><br><span class="p-1 m-1 text-light bg-primary rounded">Temporary</span><span class="p-1 m-1 text-light bg-secondary rounded">Most-wanted value</span><br><br><span class="px-1 text-light bg-primary rounded">a</span> = 1;<br> <span class="px-1 text-light bg-secondary rounded">b</span> = 2; <br><span class="px-1 text-light bg-secondary rounded">c</span> = 3; <br>a = b; <br>b = c; <br>c = a;</p>
                 
                 <h6 class="mt-1">Table. Common Variable Goals</h6>
+                <div class="table-responsive">
                 <table class="table table-bordered">
                   <thead>
                     <tr>
@@ -678,12 +696,14 @@
                     </tr>
                   </tbody>
                 </table>
+              </div>
                 <br>
-                <img src="assets/rolesvar.JPG" height="300">
+                <img class="img-fluid" src="assets/rolesvar.JPG" style="max-height:350px;">
                 <p>Introduce roles incrementally (Kuittinen & Sajaniemi, 2004)</p>
                 <!-- Table 2: Planning for Writing Selection Statements -->
                 <p>Lists of common algorithms in procedural programming tasks</p>
                 <h6 class="mt-1">Table. Common Selection Statements</h6>
+                <div class="table-responsive">
                 <table class="table table-bordered">
                   <thead>
                     <tr>
@@ -698,9 +718,10 @@
                     </tr>
                   </tbody>
                 </table>
-               
+              </div>
                 <!-- Table 3. Planning for writing loop algorithms -->
                 <h6 class="mt-5">Table. Common loop algorithms</h6>
+                <div class="table-responsive">
                 <table class="table table-bordered">
                   <thead>
                     <tr>
@@ -739,9 +760,10 @@
                     </tr>
                   </tbody>
                 </table>
-               
+              </div>
                 <!-- Table 4: Planning for writing array algorithm -->
                 <h6 class="mt-1">Table. Common array algorithms</h6>
+                <div class="table-responsive">
                 <table class="table table-bordered">
                   <thead>
                     <tr>
@@ -798,6 +820,7 @@
                     </tr>
                   </tbody>
                 </table>
+              </div>
                 <a href="https://avapaulino.github.io/ProceduralProgrammingPatterns/#examples">Patterns in procedural programming</a>
                 <h6>References</h6>
                 <p>Pauli Byckling and Jorma Sajaniemi. 2006. Roles of variables and programming skills improvement. SIGCSE Bull. 38, 1 (March 2006), 413–417. DOI:https://doi.org/10.1145/1124706.1121470</p>
@@ -856,12 +879,13 @@
                 <p>Types of representations required for designing</p>
                 <h6>Drawing Control Flow Diagrams</h6>
                 <p>Sketch using pen and paper the order of operations to highlight and revise the desired control flow and build an understanding for how data values should be transformed from a set of input and to ouput.</p>
-                <img src="assets/flowchart.JPG" height="350">
+                <img class="img-fluid" src="assets/flowchart.JPG" style="max-height:350px;">
                 <br>
                 <a href="https://youtu.be/U0Sn6oJxOi8">Example Control Flow Diagram</a>
                 <h6>Writing Pseudocode Statements</h6>
                 <p>Write in natural language a description of statements for the program that are not ambiguous and to be translated later as code (i.e., proper syntax in any given language).</p>
                 <h6>Example Pseudocode Statements</h6>
+                <div class="table-responsive">
                 <table class="table table-bordered d-inline">
                   <thead>
                     <tr>
@@ -923,6 +947,7 @@
                     </tr>
                   </tbody>
                 </table>
+              </div>
                 <br>
                 <a href="https://www.javatpoint.com/pseudocode-java">Examples of Pseudocode #1</a>
                 <br>
@@ -1006,6 +1031,7 @@
                 <p>This also benefits skill transfer by focusing attentional resources to the most relevant aspect of generating code while learning a novel procedure for instance.</p>
                 <p>To scaffold the process of generating code, the faded step may be described in the form of pseudocode, prompting the learner to translate it to code.</p>
                 <p>Also, you may considering adding subgoal annotations to support students to recognize similarities or variable role annotations:</p>
+                <div class="table-responsive">
                 <table class="table table-bordered">
                   <thead>
                     <tr>
@@ -1179,6 +1205,7 @@
                     </tr>
                   </tbody>
                 </table>
+              </div>
                 <h6>Example-Counter Example Block</h6>
                 <p>A special case for worked example to illustrate adherence to code clarity and quality guidelines. An example shows the proper way to document code for instance, while the counter example illustrates common errors such as overelaborate comments, missing method and class documentation, and so on.</p>
                 <h6>References</h6>
@@ -1317,13 +1344,13 @@
             </div>
             <div id="citation" class="col">
               <h3>Citation</h3>
-              <p>Poitras, E. (2021). Programming Language Learning. https://ericpoitras.github.io/proglanglearn/.</p>
+              <p style="word-wrap: break-word;">Poitras, E. (2021). Programming Language Learning. https://ericpoitras.github.io/proglanglearn/.</p>
             </div>
             <div id="acknowledgement" class="col">
               <br>
               <h3>Acknowledgements</h3>
               <p style="text-align: justify;">This website is supported in part by funding from the Social Sciences and Humanities Research Council.</p>
-                <img src="assets/sshrc-fip-full-color-eng.png" height="75px">
+                <img src="assets/sshrc-fip-full-color-eng.png" class="img-fluid" style="max-height:75px;">
             </div>
             <!--<div id="footer" class="row justify-content-end">
               <div class="col-auto">
