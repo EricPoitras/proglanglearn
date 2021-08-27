@@ -1,0 +1,1438 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="css/sidebars.css" rel="stylesheet">
+    <title>Prog Lang Learn</title>
+
+    <style>
+      body, #dashboard, #sidebar{
+        min-height: 100vh;
+      }
+      .page{
+        height: calc(100% - 50px);
+        padding-top: 15px;
+      }
+      #footer{
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid ">
+      <div id="dashboard" class="row">
+        <div class="col-md-3 col-sm-12 p-0">
+          <div id="sidebar" class="flex-shrink-0 p-3 bg-white" style="width: 100%;">
+            <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+              <img src="assets/java-svgrepo-com.svg" height="30px">
+              <span class="fs-5 fw-semibold ps-2">Programming Language Learning</span>
+            </a>
+            <ul class="list-unstyled ps-0">
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                  Home
+                </button>
+                <div class="collapse show" id="home-collapse" style="">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a id="linkIntro" href="#" class="link-dark rounded">Introduction</a></li>
+                    <li><a id="linkComprehension" href="#" class="link-dark rounded">Program Comprehension</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                  Laboratories and Tutoring
+                </button>
+                <div class="collapse" id="dashboard-collapse" style="">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a id="linkTracing" href="#" class="link-dark rounded">Tracing</a></li>
+                    <li><a id="linkExplaining" href="#" class="link-dark rounded">Explaining</a></li>
+                    <li><a id="linkDesigning" href="#" class="link-dark rounded">Designing</a></li>
+                    <li><a id="linkGenerating" href="#" class="link-dark rounded">Generating</a></li>
+                    <li><a id="linkRevisingTask" href="#" class="link-dark rounded">Monitoring Task Understanding</a></li>
+                    <li><a id="linkRevisingCode" href="#" class="link-dark rounded">Monitoring Solution</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#office-collapse" aria-expanded="false">
+                  Emails and Messages
+                </button>
+                <div class="collapse" id="office-collapse" style="">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a id="linkQuestion" href="#" class="link-dark rounded">Question & Answer</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                  Assignments and Feedback
+                </button>
+                <div class="collapse" id="orders-collapse" style="">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a id="linkStyle" href="#" class="link-dark rounded">Code Style and Quality</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="border-top my-3"></li>
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li class="mb-1">
+                  <a id="linkCitation" href="#" class="link-dark rounded">Citation</a>
+                </li>
+                <li class="mb-1">
+                  <a id="linkAcknowledgement" href="#" class="link-dark rounded">Acknowledgements</a>
+                </li>
+                <!--<li class="mb-1">
+                  <a href="#" class="link-dark rounded">Bibliography</a>
+                </li>-->
+              </ul>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="container h-100">
+            <br>
+            <!-- Introduction Section -->
+            <div id="introduction" class="row align-items-start">
+              <div class="col">
+                <h3>Introduction</h3>
+                <p>The first few months as a marker, teaching assistant, or head teaching assistant are all important. Experiences during this period range from frustration to enjoyment, and mark the beginning of a road towards continued improvement and professional development.</p>
+                <p>For most students embarking in this path (and your instructor), you go into your first class with a good deal of anxiety. Although you may have prepared well, you may want to be liked and respected by students, but you are disconcerted about your ability to answer questions, or the uneasiness that comes from your new role and the expecations that come with grading.</p>
+                <p>Eventually, you will find that students engage and interact well in class, that you are knowledgeable of the subject, and that teaching can be exciting. Classes are unpredictable, but it can also make teaching continually engaging and challenging.</p>
+                <p>One of the most important factor in enjoying your first teaching experiences is your ability to manage class activities - getting organized, encouraging participation, and enabling students to engage in thinking about complex topics.</p>
+                <p>The goal of this site is to enable you to learn enough techniques and simple pedagogical skills to get through your first weeks without great stress and with more satisfaction.</p>
+                <p>Remember that teaching skillfully is less time consuming than doing so badly, and doing so well is more fun that teaching poorly. Make a few notes to remind you of what to do, or not do, the next time you teach and share these insights with others. Think about what you want your students to accomplish, and what you and the students need to do to achieve these goals.</p>
+              </div>
+            </div>
+            <!-- Program Comprehension Section -->
+            <div id="comprehension" class="row align-items-start">
+              <h3>Program Comprehension</h3>
+              <p>Program comprehension is a theoretical construct to describe the different aspects of a mental representation for a program and how data is transformed from a set of input to output values, a common problem encountered in procedural programming tasks. </p>
+              <p>A learner builds a mental representation by engaging in several cognitive and metacognitive processes that include but are not limited to the following:</p>
+              <table class="table d-inline">
+                <thead>
+                  <tr>
+                    <th scope="col p-3">Reading</th>
+                    <th scope="col p-3">Writing</th>
+                    <th scope="col p-3">Revising</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p-3">Tracing</td>
+                    <td class="p-3">Designing</td>
+                    <td class="p-3">Monitoring Task Understanding</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3">Explaining</td>
+                    <td class="p-3">Generating</td>
+                    <td class="p-3">Monitoring Solution</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>In doing so, a learner applies their knowledge, which is different from knowledge of the syntax of a given language, the semantics of the expression, or its function in the context of solving a problem. This involves cognitive operations on information to transform it into a certain product, like translating code from pseudocode statements. The resulting product can then be evaluated by the learner against their own standards for coherence in understanding the task as well as clarity and quality of their code.</p>
+              <p>This site is meant to serve as a resource for you to review examples of these products and how you can design instruction that supports students in engaging in these cognitive and metacognitive processes by reviewing resources for answering common questions, marking assignements and giving feedback, as well as listing examples, methods, and content that can be used to support students during lab demonstrations.</p>
+              <p>The term <strong>instructional method</strong> refers to any verbal utterances (i.e., auditory information processing) between tutor and learner that is most suitable towards attaining an instructional goal or applying a certain type of knowledge. For instance, a tutor may demonstrate to the learner how to trace execution of a program by saying out loud how data values stored in memory are modified from one statement to the next while reading a program.</p>
+              <p>The term <strong>instructional content</strong> is used to refer to any pictorial information or on-screen text (i.e., visual information processing) shared between tutor and learner to facilitate goal attainment. For instance, a tutor might draw a tracing table to list the changes in values stored in memory and how these are modified from one statement to the next while reading a program.</p>
+              <p>Given this distinction, you should keep in mind <a href="https://waterbearlearning.com/mayers-principles-multimedia-learning/">Mayer's principles for multimedia content</a> in terms of designing verbal and visual information as instructional content. This is beyond the scope of this site, but it provides some basic and simple advice that may prove useful in guiding decisions for what to display on a slide and what to say when learners attend to the content.</p>
+              <p>Another concern that is distinct from designing auditory/visual information relates to how to sequence information. In CSCI 1105, you may want to sequence examples and problems to provide instruction on reading prior to writing, and writing prior to evaluating. The same example may be used to illustrate how to trace, then explain each statement, followed by an opportunity to practice and receive feedback. The same can be said of examples of how to write a solution, covering how to design prior to generate code. One approach involves the creation of a lesson plan to keep track of each component, as in the following:</p>
+              <h6>Example #1</h6>
+              <p>This is one of my favorite combinations for introducing a new type of statement, so that students are exposed simultaneously in one slide to the syntax, semantic, and function of a statement.</p>
+              <table class="table table-sm table-bordered d-inline">
+                <tr>
+                  <th>Step</th>
+                  <th>Procedural Knowledge</th>
+                  <th>Declarative Knowledge</th>
+                  <th>Method</th>
+                  <th>Content</th>
+                </tr>
+                <tr>
+                  <td>Slide 1</td>
+                  <td>Tracing, Designing, Generating</td>
+                  <td>Arithmetic Operation</td>
+                  <td>Modeling</td>
+                  <td>Memory Diagram, Pseudocode, Code Example</td>
+                </tr>
+              </table>
+              <p><img src="assets/slide1.JPG" height="300"></p>
+              <h6>Example #2</h6>
+              <p>This is another common combination used for teaching how to read a program by tracing, especially for concepts that lend themselves to common misconceptions (i.e., local variables with reference to arrays). The instructor can model how to trace, then prompt the learner to predict the following step on a problematic statement in order to coach them by proving feedback.</p>
+              <table class="table table-sm table-bordered d-inline">
+                <tr>
+                  <th>Step</th>
+                  <th>Procedural Knowledge</th>
+                  <th>Declarative Knowledge</th>
+                  <th>Method</th>
+                  <th>Content</th>
+                </tr>
+                <tr>
+                  <td>Slide 1</td>
+                  <td>Tracing</td>
+                  <td>Loops & Arrays</td>
+                  <td>Modeling</td>
+                  <td>Faded Worked Example, Subgoal and Variable Role Annotations, Memory Diagram</td>
+                </tr>
+                <tr>
+                  <td>Slide 2</td>
+                  <td>Tracing</td>
+                  <td>Loops & Arrays</td>
+                  <td>Coaching</td>
+                  <td>Faded Worked Example, Subgoal and Variable Role Annotations, Memory Diagram</td>
+                </tr>
+              </table>
+              <p><img src="assets/slide2.JPG" height="300"></p>
+              <br>
+            </div>
+            <!-- Reading Section -->
+            <div id="tracing" class="row align-items-start">
+              <div class="col">
+                <h3>Reading</h3>
+                <h4>Tracing</h4>
+                <h5>Definition</h5>
+                <p>Any attempt by the learner to recall and recognize syntax while reading a statement to apply their knowledge of the meaning of the operation. This involves reinstating in short term working memory the data stored in variables and inferring changes in their values from one statement to another.</p>
+                <h5>Example #1 - Single Code Statement</h5>
+                <p><strong>Code:</strong> <br>b = 1;<br> a = b + 2;</p>
+                <p><strong>Tutor:</strong> What is the value assigned to variable a?</p>
+                <p><strong>Student:</strong> 3</p>
+                <p><strong>Tutor:</strong> That is correct.</p>
+                <h5>Example #2 - Multiple Code Statement</h5>
+                <p><strong>Code:</strong> <br>b = 1;<br> a = b + 2; <br>a = a * 3;</p>
+                <p><strong>Tutor:</strong> Can you predict the output of these arithmetic operations?</p>
+                <p><strong>Student:</strong> 9</p>
+                <p><strong>Tutor:</strong> That is correct.</p>
+                <h5>Instructional Methods</h5>
+                <p>Ways to promote the development of tracing</p>
+                <p><strong>Code:</strong> <br>a = 1;<br> b = 2; <br>c = 3; <br>a = b; <br>b = c; <br>c = a;</p>
+                <h6>Modeling</h6>
+                <p>Tutor performs a task so students can observe</p>
+                <p><strong>Tutor: </strong>Assuming that is a is set to 1, b to 2, and c to 3; then, the first assignment operation assigns 2 to a, then 3 to b, and finally 1 to c.</p>
+                <h6>Coaching</h6>
+                <p>Tutor observes and facilitates while students perform a task</p>
+                <p><strong>Tutor: </strong>Try to write values assigned to each variable in this series of variable assignment operations.</p>
+                <p><strong>Student: </strong>Assuming that is a is set to 1, b to 2, and c to 3; then, the first assignment operation assigns 2 to a, then 3 to b, and finally 1 to c.</p>
+                <p><strong>Tutor: </strong>That is correct.</p>
+                <h6>Scaffolding</h6>
+                <p>Tutor provides support to help the student perform a task</p>
+                <p><strong>Tutor: </strong>Assuming that is a is set to 1, b to 2, and c to 3; then, the first assignment operation assigns 2 to a, and what are the remaining values assigned to each variable?</p>
+                <p><strong>Student: </strong>3 to b, and finally 1 to c.</p>
+                <p><strong>Tutor: </strong>That is correct.</p>
+                <h6>Articulation</h6>
+                <p>Tutor encourages students to verbalize their knowledge and thinking</p>
+                <p><strong>Tutor: </strong>Tracing involves reading the program to infer how values assigned to variables in memory are changed from one statement to the next. It's common practice to do so by verbalizing out loud or writing on a piece of paper to avoid mistakes. For example, the first assignment operation assigns 2 to a, and what are the remaining values assigned to each variable?</p>
+                <p><strong>Student: </strong>3 to b, and finally 1 to c.</p>
+                <h6>Reflection</h6>
+                <p>Tutor enables students to compare their performance with others</p>
+                <p><strong>Tutor: </strong> A common mistake is to mix values because it's difficult to hold each of them in memory for more than a few seconds. Try repeating them out loud, writing them down, or grouping them, as in abc is assigned 123 (one hundred twenty three).</p>
+                <h6>Exploration</h6>
+                <p>Tutor invites students to pose and solve their own problems</p>
+                <p><strong>Tutor: </strong> Can you the predict the resulting output of these assignment operations if c were assigned 6 instead of 3?</p>
+                <h5>Instructional Content</h5>
+                <p>Types of representations required for tracing</p>
+                <p><strong>Code:</strong> <br>a = 1;<br> b = 2; <br>c = 3; <br>a = b; <br>b = c; <br>c = a;</p>
+                <h6>Data Values Annotations</h6>
+                <p>Inline comments limited to single- or multi-line content in the text editor. Students may attempt to fill a problem step that is faded out from the worked example.</p>
+                <p><strong>Code: </strong><br>/* <br>Memory<br> a | 2<br>   b | 3 <br>  c | 1<br>*/</p>
+                <h6>Tracing Tables</h6>
+                <p>Table listing variables and values filled or partially filled with pen and paper or in a digital format. Students may attempt to fill a problem step that is faded out from the worked example.</p>
+                <table class="table table-sm table-bordered d-inline">
+                  <tr>
+                    <th>a</th>
+                    <th>b</th>
+                    <th>c</th>
+                  </tr>
+                  <tr>
+                    <td class="p-3"><del>1</del><br>2</td>
+                    <td class="p-3"><del>2</del><br>3</td>
+                    <td class="p-3"><del>3</del><br>1</td>
+                  </tr>
+                </table>
+                <br>
+                <a href="https://youtu.be/TZss5ukwN8s">Example Tracing Table</a>
+                <h6>Control Flow as Graph</h6>
+                <p>Diagram that represent method bodies and the different branches in the control flow or order of statement execution as flow chart.</p>
+                <svg width="800" height="300" xmlns="http://www.w3.org/2000/svg">
+                  <g id="Layer_1">
+                    <title>Layer 1</title>
+                    <path id="svg_11" d="m65.47499,129.43867l63.99993,-40l64.00008,40l-64.00008,40l-63.99993,-40z" stroke-width="2" stroke="#000" fill="none"/>
+                    <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_1" y="137.4" x="105" stroke-width="0" stroke="#000" fill="#000000">a &gt; 0</text>
+                    <path id="svg_17" d="m129,89.4c0,0 -1,-60 0,-60.4" opacity="NaN" stroke-width="2" stroke="#000" fill="none"/>
+                    <path id="svg_18" d="m66,129.4c0,0 -40.0125,0 -41,-0.4" opacity="NaN" stroke-width="2" stroke="#000" fill="none"/>
+                    <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_20" y="112.4" x="18" stroke-width="0" stroke="#000" fill="#000000">false</text>
+                    <path stroke="#000" id="svg_23" d="m252,129.57561c0,0 -57.57897,0 -59,-0.57561" opacity="NaN" stroke-width="2" fill="none"/>
+                    <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_24" y="116.4" x="195" stroke-width="0" stroke="#000" fill="#000000">true</text>
+                    <rect id="svg_25" height="51" width="143" y="104.4" x="251" stroke-width="2" stroke="#000" fill="none"/>
+                    <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_26" y="136.4" x="267" stroke-width="0" stroke="#000" fill="#000000">a = a - 1;</text>
+                    <path id="svg_27" d="m319,103.4l0,-73.4l-191,0" opacity="NaN" stroke-width="2" stroke="#000" fill="#ffffff"/>
+                  </g>
+                </svg>
+                <br>
+                <a href="https://youtu.be/0lVA7TPpxUE">Example Control Flow Diagram</a>
+                <h6>Expression Tree Diagrams</h6>
+                <p>Diagram depicting operands and operators as tree node representations.</p>
+                <svg width="800" height="450" xmlns="http://www.w3.org/2000/svg">
+                  <g id="Layer_1">
+                    <title>Layer 1</title>
+                    <rect id="svg_2" height="55" width="85" y="262.4" x="20" stroke="#000" fill="#fff"/>
+                    <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_1" y="297.4" x="38" stroke-width="0" stroke="#000" fill="#000000">int: 1</text>
+                    <rect id="svg_3" height="55" width="85" y="262.4" x="164" stroke="#000" fill="#fff"/>
+                    <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_4" y="297.4" x="182" stroke-width="0" stroke="#000" fill="#000000">int: 2</text>
+                    <rect id="svg_6" height="55" width="85" y="156.4" x="92" stroke="#000" fill="#fff"/>
+                    <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_7" y="191.4" x="129" stroke-width="0" stroke="#000" fill="#000000">+</text>
+                    <path id="svg_10" d="m63,262.4c0,0 73,-52 73,-52c0,0 69,51 69,50.6" opacity="NaN" stroke="#000" fill="none"/>
+                    <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_11" y="141.4" x="91" stroke-width="0" stroke="#000" fill="#000000">int: 3</text>
+                    <rect stroke="#000" id="svg_12" height="55" width="145" y="156.4" x="235" fill="#fff"/>
+                    <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_13" y="191.4" x="254" stroke-width="0" stroke="#000" fill="#000000">String: "A"</text>
+                    <path stroke="#000" id="svg_16" d="m137,155.4c0,0 84.82394,-52 84.82394,-52c0,0 80.17605,51 80.17605,50.6" opacity="NaN" fill="none"/>
+                    <rect id="svg_17" height="55" width="85" y="49.4" x="179" stroke="#000" fill="#fff"/>
+                    <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_18" y="86.4" x="215" stroke-width="0" stroke="#000" fill="#000000">+</text>
+                    <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_19" y="37.4" x="185" stroke-width="0" stroke="#000" fill="#000000">String: "3A"</text>
+                  </g>
+                </svg>
+                <br>
+                <a href="https://youtu.be/_LxbhLNRZkI">Example Expression Tree Diagram</a>
+                <h6>Memory Diagrams</h6>
+                <p>Diagram listing stack, heap, and method memory area to understand notions related to the JVM memory structure and management (local, instance, and static variables, respectively). Students may attempt to fill a problem step that is faded out from the worked example.</p>
+                <div>
+                  <!-- https://editor.method.ac/#delete -->
+                  <svg width="800" height="450" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                      <title>Layer 1</title>
+                      <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_1" y="50" x="37.6" stroke-width="0" stroke="#000" fill="#000000">Stack Area</text>
+                      <line stroke="#000" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_2" y2="332.13818" x2="242.6" y1="33" x1="242.6" fill="none"/>
+                      <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_3" y="83" x="39.6" stroke-width="0" stroke="#000" fill="#000000">main()</text>
+                      <rect stroke="#000" id="svg_10" height="116" width="164.00001" y="94" x="36" fill="none"/>
+                      <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_7" y="50" x="253.6" stroke-width="0" stroke="#000" fill="#000000">Heap Area</text>
+                      <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_8" y="382" x="30.6" stroke-width="0" stroke="#000" fill="#000000">Method Area</text>
+                      <line stroke="#000" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_9" y2="333" x2="445.0535" y1="333" x1="40" fill="none"/>
+                      <g id="svg_15">
+                        <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_4" y="125" x="136.6" stroke-width="0" stroke="#000" fill="#000000">a</text>
+                        <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_12" y="124" x="165.6" stroke-width="0" stroke="#000" fill="#000000">2</text>
+                        <path id="svg_14" d="m157,107l0,27l33,0" opacity="NaN" stroke="#000" fill="none"/>
+                      </g>
+                      <g id="svg_19">
+                        <path id="svg_18" d="m157,141l0,27l33,0" opacity="NaN" stroke="#000" fill="none"/>
+                        <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_20" y="161" x="166" stroke-width="0" stroke="#000" fill="#000000">3</text>
+                        <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_21" y="162" x="137" stroke-width="0" stroke="#000" fill="#000000">b</text>
+                      </g>
+                      <g id="svg_25">
+                        <path id="svg_22" d="m158,176l0,27l33,0" opacity="NaN" stroke="#000" fill="none"/>
+                        <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_26" y="195" x="139" stroke-width="0" stroke="#000" fill="#000000">c</text>
+                        <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_27" y="194" x="166" stroke-width="0" stroke="#000" fill="#000000">1</text>
+                      </g>
+                    </g>
+                  </svg>
+                  <br>
+                  <a href="https://youtu.be/_8-ht2AKyH4">Example Memory Diagram</a>
+                </div>
+                <p>Please find below a list of common misconceptions illustrated as memory diagrams as well as control flow and expression tree diagrams in Java:</p>
+                <p>Arithmetic Operations</p>
+                <ul>
+                  <li><a href="https://progmiscon.org/misconceptions/Java/ArithmeticPlusPrecedes/">ArithmeticPlusPrecedes</a></li>
+                  <li><a href="https://progmiscon.org/misconceptions/Java/LocalVariablesAutoInitialized/">LocalVariablesAutoInitialized</a></li>
+                  <li><a href="https://progmiscon.org/misconceptions/Java/NoAtomicExpression/">NoAtomicExpression</a></li>
+                  <li><a href="https://progmiscon.org/misconceptions/Java/NoReservedWords/">NoReservedWords</a></li>
+                  <li><a href="https://progmiscon.org/misconceptions/Java/OutsideInMethodNesting/">OutsideInMethodNesting</a></li>
+                  <li><a href="https://progmiscon.org/misconceptions/Java/VariablesHoldExpressions/">VariablesHoldExpressions</a></li>
+                </ul>
+                <p>String Operations</p>
+                <ul>
+                  <li><a href="https://progmiscon.org/misconceptions/Java/AssignmentCopiesObject/">AssignmentCopiesObject</a></li>
+                  <li><a href="https://progmiscon.org/misconceptions/Java/CharNotNumeric/">CharNotNumeric</a></li>
+                  <li><a href="https://progmiscon.org/misconceptions/Java/NullIsObject/">NullIsObject</a></li>
+                  <li><a href="https://progmiscon.org/misconceptions/Java/StringLiteralNoObject/">StringLiteralNoObject</a></li>
+                  <li><a href="https://progmiscon.org/misconceptions/Java/StringPlusStringifiesExpression/">StringPlusStringifiesExpression</a></li>
+                  <li><a href="https://progmiscon.org/misconceptions/Java/VariablesHoldObjects/">VariablesHoldObjects</a></li>
+                </ul>
+                <p>Decisions</p>
+                <ul>
+                  <li><a href="https://progmiscon.org/misconceptions/Java/AssignCompares/">AssignCompares</a></li>
+                  <li><a href="https://progmiscon.org/misconceptions/Java/ConditionalIsSequence/">ConditionalIsSequence</a></li>
+                  <li><a href="https://progmiscon.org/misconceptions/Java/IfIsLoop/">IfIsLoop</a></li>
+                  <li><a href="https://progmiscon.org/misconceptions/Java/NoShortCircuit/">NoShortCircuit</a></li>
+                  <li><a href="https://progmiscon.org/misconceptions/Java/NoSingleLogicAnd/">NoSingleLogicAnd</a></li>
+                  <li><a href="https://progmiscon.org/misconceptions/Java/ComparisonWithBooleanLiteral/">ComparisonWithBooleanLiteral</a></li>
+                  <li><a href="https://progmiscon.org/misconceptions/Java/EqualityOperatorComparesObjectsValues/">EqualityOperatorComparesObjectsValues</a></li>
+                  <li><a href="https://progmiscon.org/misconceptions/Java/EqualsComparesReferences/">EqualsComparesReferences</a></li>
+                </ul>
+                <p>Arrays</p>
+                <ul>
+                  <li><a href="https://progmiscon.org/misconceptions/Java/ArrayHasLengthMethod/">ArrayHasLengthMethod</a></li>
+                </ul>
+                <p>Loops and Arrays</p>
+                <ul>
+                  <li><a href="https://progmiscon.org/misconceptions/Java/ArraysGrow/">ArraysGrow</a></li>
+                </ul>
+                <p>Methods</p>
+                <ul>
+                  <li><a href="https://progmiscon.org/misconceptions/Java/DeferredReturn/">DeferredReturn</a></li>
+                  <li><a href="https://progmiscon.org/misconceptions/Java/ReturnCall/">ReturnCall</a></li>
+                </ul>
+                <p>Recursive Methods</p>
+                <ul>
+                  <li><a href="https://progmiscon.org/misconceptions/Java/RecursiveActivationsShareFrame/">RecursiveActivationsShareFrame</a></li>
+                  <li><a href="https://progmiscon.org/misconceptions/Java/ReturnUnwindsMultipleFrames/">ReturnUnwindsMultipleFrames</a></li>
+                </ul>
+                <h6>References</h6>
+                <p>Nelson, Greg L., Andrew Hu, Benjamin Xie, and Amy J. Ko. "Towards validity for a formative assessment for language-specific program tracing skills." In Proceedings of the 19th Koli Calling International Conference on Computing Education Research, pp. 1-10. 2019.</p>
+                <p>Xie, Benjamin, Greg L. Nelson, and Andrew J. Ko. "An explicit strategy to scaffold novice program tracing." In Proceedings of the 49th ACM Technical Symposium on Computer Science Education, pp. 344-349. 2018.</p>
+                <p>Juha Sorva. 2013. Notional Machines and Introductory Programming Education. ACM Trans. Comput. Educ., Vol. 13, 2 (July 2013), 1--31. https://doi.org/10.1145/2483710.2483713 Place: New York, NY, USA Publisher: Association for Computing Machinery.</p>
+                <p>Colleen M. Lewis. 2021. Physical Java Memory Models: A Notional Machine. In Proceedings of the 52nd ACM Technical Symposium on Computer Science Education (SIGCSE '21). Association for Computing Machinery, New York, NY, USA, 383–389. DOI:https://doi.org/10.1145/3408877.3432477</p>
+                <p>Lewis, Colleen M. 2020. Physical Java Memory Models: A Notional Machine. https://www.youtube.com/playlist?list=PLHqz-wcqDQIE6nNE58CaEoHJKhSD_4J4S. Accessed: 2020-11-26.</p>
+                </div>
+            </div>
+            <div id="explaining" class="row align-items-start">
+              <div class="col">
+                <h3>Reading</h3>
+                <h4>Explaining</h4>
+                <h5>Definition</h5>
+                <p>Any attempt by the learner to apply their knowledge of the meaning of the operation while reading a statement to infer its function. This involves reinstating in short term working memory the goal and common patterns of programs and role of variables as well as inferring the subgoal of any given statement.</p>
+                <h5>Example #1 - Single Code Statement</h5>
+                <p><strong>Code:</strong> <br>min = someArray[0];<br> for(int i = 0; i < someArray.length; i++({ <br>&emsp;if(someArray[i] < min){ <br>&emsp;&emsp;min = someArray[i];<br>&emsp;}<br>}</p>
+                <p><strong>Tutor:</strong> What is the purpose of the variable min?</p>
+                <p><strong>Student:</strong> To hold the most-wanted value, the minimum.</p>
+                <p><strong>Tutor:</strong> That is correct.</p>
+                <h5>Example #2 - Multiple Code Statement</h5>
+                <p><strong>Code:</strong> <br>min = someArray[0];<br> for(int i = 0; i < someArray.length; i++({ <br>&emsp;if(someArray[i] < min){ <br>&emsp;&emsp;min = someArray[i];<br>&emsp;}<br>}</p>
+                <p><strong>Tutor:</strong> What is the purpose of the algorithm?</p>
+                <p><strong>Student:</strong> The loop algorithm finds the minimum value in an array.</p>
+                <p><strong>Tutor:</strong> That is correct.</p>
+                <h5>Instructional Methods</h5>
+                <p>Ways to promote the development of explaining</p>
+                <p><strong>Code:</strong> <br>a = 1;<br> b = 2; <br>c = 3; <br>a = b; <br>b = c; <br>c = a;</p>
+                <h6>Modeling</h6>
+                <p>Tutor performs a task so students can observe</p>
+                <p><strong>Tutor: </strong>Given that the goal of the algorithm is to swap variables, the variables a and b stored the most-wanted values, while c stores a value temporarily.</p>
+                <h6>Coaching</h6>
+                <p>Tutor observes and facilitates while students perform a task</p>
+                <p><strong>Tutor: </strong>Try to infer the function of each variable and the program.</p>
+                <p><strong>Student: </strong>Given that the goal of the algorithm is to swap variables, the variables a and b stored the most-wanted values, while c stores a value temporarily.</p>
+                <p><strong>Tutor: </strong>That is correct.</p>
+                <h6>Scaffolding</h6>
+                <p>Tutor provides support to help the student perform a task</p>
+                <p><strong>Tutor: </strong>Assuming that the goal of this program is to swap variables, and c stores a temporary value, then what is function of variables a and b?</p>
+                <p><strong>Student: </strong>The variables a and b store the most-wanted values, which are swapped.</p>
+                <p><strong>Tutor: </strong>That is correct.</p>
+                <h6>Articulation</h6>
+                <p>Tutor encourages students to verbalize their knowledge and thinking</p>
+                <p><strong>Tutor: </strong>Explaining involves reading the program to infer the function of algorithms and variables as well as recognize patterns. It's common practice to do so by verbalizing out loud, writing on a piece of paper, or adding an inline comment to improve the quality of the code. For example, the variable a stores 2 temporarily, and what is the function of the remaining statements?</p>
+                <p><strong>Student: </strong>b and c stores the most-wanted values, which are swapped.</p>
+                <h6>Reflection</h6>
+                <p>Tutor enables students to compare their performance with others</p>
+                <p><strong>Tutor: </strong>A common mistake in swapping values is to forget that an additional variable is needed to store a value. Try to comment the code block to indicate the swap in values as well as the variable initialized with a temporary value.</p>
+                <h6>Exploration</h6>
+                <p>Tutor invites students to pose and solve their own problems</p>
+                <p><strong>Tutor: </strong> Can you re-write the variable or function names to better reflect their function?</p>
+                <h5>Instructional Content</h5>
+                <p>Types of representations required for explaining</p>
+                <p><strong>Code:</strong> <br>a = 1;<br> b = 2; <br>c = 3; <br>a = b; <br>b = c; <br>c = a;</p>
+                <h6>Subgoal Annotations</h6>
+                <p>Inline comments limited to single- or multi-line content in the text editor and involve evaluating different statements types while reading programs. <!--Students may attempt to fill a problem step that is faded out from the worked example.--></p>
+                <p><strong>Code:</strong><br>// INPUT AREA<br>// store temp value <br>a = 1;<br>// store most-wanted values<br> b = 2; <br>c = 3;<br>// Diagram the order of assignment statements for the variable swap algorithm<br>...</p>
+                <h6>Table. Common Subgoal Annotations</h6>
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">Evaluate</th>
+                      <!--<th scope="col">Write</th>-->
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>Subgoals for evaluating (assignment) expressions</p>
+                        <ol>
+                          <li>Determine whether data type of expression is compatible with data type of variable</li>
+                          <li>Update variable for pre based on side effect</li>
+                          <li>Solve arithmetic equation</li>
+                          <li>Check data type of copied value against data type of variable</li>
+                          <li>Update variable for post based on side effect</li>
+                        </ol>
+                      </td>
+                      <!--<td>
+                        <p>Subgoals for writing expressions</p>
+                        <ol>
+                          <li>Determine expression that will yield variable</li>
+                          <li>Determine data type and name of variable and data type of expression</li>
+                          <li>Determine arithmetic equation with operators</li>
+                          <li>Determine expression components</li>
+                          <li>Operators and operands must be compatible</li>
+                        </ol>
+                      </td>-->
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>Subgoals for evaluating selection statements</p>
+                        <ol>
+                          <li>Diagram which statements go together</li>
+                          <li>For if statement, determine whether expression is true or false</li>
+                          <li>If true - follow true branch, if false - follow else branch or do nothing if no else branch</li>
+                        </ol>
+                      </td>
+                      <!--<td>
+                        <p>Subgoals for writing selection statements</p>
+                        <ol>
+                          <li>Define how many mutually eclusive paths are needed</li>
+                          <li>Order from most restrictive/selective group to least restrictive</li>
+                          <li>Write if statement with Boolean expression</li>
+                          <li>Follow with true bracket including action</li>
+                          <li>Follow with else bracket</li>
+                          <li>Repeat until all groups and actions are accounted for</li>
+                        </ol>
+                      </td>-->
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>Subgoals for evaluating loops</p>
+                        <ol>
+                          <li>Identify loop parts</li>
+                          <ol>
+                          <li>Determine start condition</li>
+                          <li>Determine update condition</li>
+                          <li>Determine termination condition</li>
+                          <li>Determine body that is repeated</li>
+                        </ol>
+                        </ol>
+                        <ol>
+                          <li>Trace the loop</li>
+                          <ol>
+                          <li>For every iteration of loop, write down values</li>
+                        </ol>
+                        </ol>
+                      </td>
+                      <!--<td>
+                        <p>Subgoals for writing loops</p>
+                        <ol>
+                          <li>Determine purposes of loop</li>
+                          <ol>
+                          <li>Pick a loop structure (while, for, do_while)</li>
+                        </ol>
+                          <li>Define and initialize variables</li>
+                          <li>Determine termination condition</li>
+                          <ol>
+                          <li>Invert termination conditions to continuation condition</li>
+                        </ol>
+                          <li>Write loop body</li>
+                          <ol>
+                          <li>Update loop control variable to reach termination</li>
+                        </ol>
+                        </ol>
+                      </td>-->
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>Subgoals for calling or tracing methods</p>
+                        <ol>
+                          <li>Classify methods as static method or instance method</li>
+                          <ol>
+                          <li>If static, use the class name</li>
+                          <li>If instance, must have or create an instance</li>
+                          </ol>
+                          <li>Write (instance/class) dot method name and ()</li>
+                          <li>Determine whether parameter(s) are appropriate</li>
+                          <ol>
+                          <li>Numer of parameters passed must match method declaration</li>
+                          <li>Data types of parameters passed must match method declaration (or be assignable)</li>
+                          </ol>
+                          <li>Determine what the method will return (if anything: data type, void, print, change state of object) and where it will be stored (nowhere, somewhere)</li>
+                          <li>Evaluate right hand side of assignment (if there is one). Value is dependent on method's purpose.</li>
+                        </ol>
+                      </td>
+                      <!--<td>
+                        <p>Subgoals for writing methods</p>
+                        <ol>
+                          <li>Define method header based on problem</li>
+                          <li>Define return statement at the end</li>
+                          <li>Define method body/logic</li>
+                          <ol>
+                          <li>Determine types of logic (expression, selection, loop, etc.)</li>
+                          <li>Define internal variables</li>
+                          <li>Write statements</li>
+                        </ol>
+                        </ol>
+                      </td>-->
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>Subgoals for using objects (creating instances)</p>
+                        <ol>
+                          <li>Declare variable of appropriate class datatype</li>
+                          <li>Assign to variable: keyword new, followed by class name, followed by ()</li>
+                          <li>Determine whether parameter(s) are appropriate (API)</li>
+                          <ol>
+                            <li>Number of parameters</li>
+                            <li>Data types of the parameters</li>
+                          </ol>
+                        </ol>
+                      </td>
+                      <!--<td>
+                        <p>Subgoals for writing classes (associated rule sheets)</p>
+                        <ol>
+                          <li>Name it</li>
+                          <li>Differentiate class-level (static) vs. instance/object-level variables</li>
+                          <li>Differentiate class-level (static) vs. instance/objbect behaviors/methods</li>
+                          <li>Define instance variables (that you want to be interrelated)</li>
+                          <li>Define class variables (static) as needed</li>
+                          <li>Create constructor (behavior) that creates initial state of object</li>
+                          <li>Create 1 accessor and 1 mutator behaviors per attribute</li>
+                          <li>Write toString method</li>
+                          <li>Write equals method</li>
+                          <li>Create additional methods as needed</li>
+                        </ol>
+                      </td>-->
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>Subgoals for evaluating arrays</p>
+                        <ol>
+                          <li>Set up array from 0 to size - 1</li>
+                          <li>Evaluate data type of statements against array</li>
+                          <li>Trace statements, updating slots as you go</li>
+                          <ol>
+                            <li>Remember assignment subgoals</li>
+                          </ol>
+                        </ol>
+                      </td>
+                      <!--<td>
+                        <p>Subgaols for writing arrays</p>
+                        <ol>
+                          <li>Data type plus []</li>
+                          <li>Variable name = {initializer list}, or new datatype [size]</li>
+                        </ol>
+                      </td>-->
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="https://www.cs1subgoals.org/how-do-i-use-subgoals/">Example for How to Use Subgoals</a>
+                <h6>References</h6>
+                <p>Lauren E. Margulieux, Briana B. Morrison, and Adrienne Decker. 2019. Design and Pilot Testing of Subgoal Labeled Worked Examples for Five Core Concepts in CS1. In <i>Proceedings of the 2019 ACM Conference on Innovation and Technology in Computer Science Education</i> (<i>ITiCSE '19</i>). Association for Computing Machinery, New York, NY, USA, 548–554. DOI:https://doi.org/10.1145/3304221.3319756</p>
+                <p>Decker, A., & Morrison, B., & Margulieux, L. E. (2019, June), Board 37: Developing Subgoal Labels for Imperative Programming to Improve Student Learning Outcomes Paper presented at 2019 ASEE Annual Conference & Exposition , Tampa, Florida. 10.18260/1-2--32333</p>
+                <p>Briana B. Morrison, Lauren E. Margulieux & Adrienne Decker (2020) The curious case of loops, Computer Science Education, 30:2, 127-154, DOI: 10.1080/08993408.2019.1707544</p>
+                <!-- Table 1: Planning for Writing Expressions -->
+                <h6>Variable Roles</h6>
+                <p>Common roles or functions assigned to variables within programs. Students may choose a role for a variable that is faded out from the worked example.</p>
+                <p><strong>Code:</strong><br><span class="p-1 m-1 text-light bg-primary rounded">Temporary</span><span class="p-1 m-1 text-light bg-secondary rounded">Most-wanted value</span><br><br><span class="px-1 text-light bg-primary rounded">a</span> = 1;<br> <span class="px-1 text-light bg-secondary rounded">b</span> = 2; <br><span class="px-1 text-light bg-secondary rounded">c</span> = 3; <br>a = b; <br>b = c; <br>c = a;</p>
+                
+                <h6 class="mt-1">Table. Common Variable Goals</h6>
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">Roles</th>
+                      <th scope="col">Definition</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr id="1.1">
+                      <th scope="row">Fixed value</th>
+                      <td>The role of a variable or an attribute is a fixed value, if its value is not changed after
+                        intialization.<br><br>// Store a fixed value</td>
+                    </tr>
+                    <tr id="1.2">
+                      <th scope="row">Stepper</th>
+                      <td>Stepper goes through a succession of values in some systemic way<br><br>// Traverse the indexes of _____
+                      </td>
+                    </tr>
+                    <tr id="1.3">
+                      <th scope="row">Most-recent holder</th>
+                      <td>The value of a most-recent holder is the latest gone through value of a certain group or simply the latest
+                        input value<br><br>// Store the most-recent input</td>
+                    </tr>
+                    <tr id="1.4">
+                      <th scope="row">Most-wanted holder</th>
+                      <td>The value of a most-recent holder is the latest gone through value of a certain group or simply the latest
+                        input value<br><br>// Store the most-recent input</td>
+                    </tr>
+                    <tr id="1.5">
+                      <th scope="row">Gatherer</th>
+                      <td>The value of the gatherer accumulates all the values gone through so far.<br><br>// Gather all values</td>
+                    </tr>
+                    <tr id="1.6">
+                      <th scope="row">Follower</th>
+                      <td>A follower always gets the old value of another known variable or attribute as its new value<br><br>//
+                        Store the old value</td>
+                    </tr>
+                    <tr id="1.7">
+                      <th scope="row">One-way flag</th>
+                      <td>A one-way flag has two possible values but cannot get its original value anymore after it has been once
+                        changed. A one-way flag can also be used, for example, to watch errors occuring in input data so that the
+                        program could ask the inputs again.<br><br>// Store a boolean flag</td>
+                    </tr>
+                    <tr id="1.8">
+                      <th scope="row">Temporary</th>
+                      <td>The value of a temporary is always needed only for a very short period. A temporary is typically used for
+                        efficiency reasons (e.g., executing a computation, whose value is needed in several places, only once) or to
+                        clarify the program (e.g., computing the result in a variable even though the use of a variable would not be
+                        absolutely necessary). A temporary is also often used for swapping two data elements of an
+                        organizer.<br><br>// Store a temporary value</td>
+                    </tr>
+                    <tr id="1.9">
+                      <th scope="row">Organizer</th>
+                      <td>An organizer is a data structure which is used for reorganizing its elements after initialization. An
+                        organizer can be used for sorting or for some other reorganization.<br><br>// Store a collection of values
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br>
+                <img src="assets/rolesvar.JPG" height="300">
+                <p>Introduce roles incrementally (Kuittinen & Sajaniemi, 2004)</p>
+                <!-- Table 2: Planning for Writing Selection Statements -->
+                <p>Lists of common algorithms in procedural programming tasks</p>
+                <h6 class="mt-1">Table. Common Selection Statements</h6>
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">Common selection algorithm</th>
+                      <th scope="col">Definition</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr id="2.1">
+                      <th scope="row">Input validation</th>
+                      <td>Ensure that the next input is a specific data type</td>
+                    </tr>
+                  </tbody>
+                </table>
+               
+                <!-- Table 3. Planning for writing loop algorithms -->
+                <h6 class="mt-5">Table. Common loop algorithms</h6>
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">Common loop algorithm</th>
+                      <th scope="col">Definition</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr id="3.1">
+                      <th scope="row">Processing a sentinel</th>
+                      <td>A sentinel value denotes the end of a data set, but it is not part of the data.</td>
+                    </tr>
+                    <tr id="3.2">
+                      <th scope="row">Sum and average value</th>
+                      <td>To compute an average, keep a total and a count of all values</td>
+                    </tr>
+                    <tr id="3.3">
+                      <th scope="row">Counting matches</th>
+                      <td>To count values that fulfill a condition, check all values and increment a counter for each match.</td>
+                    </tr>
+                    <tr id="3.4">
+                      <th scope="row">Finding the first match</th>
+                      <td>If your goal is to find a match, exit the loop when the match is found.</td>
+                    </tr>
+                    <tr id="3.5">
+                      <th scope="row">Prompting until a match is found</th>
+                      <td>Keep asking the user to provide a correct input</td>
+                    </tr>
+                    <tr id="3.6">
+                      <th scope="row">Maximum and minimum</th>
+                      <td>To find the largest value, update the largest value seen so far whenever you see a larger one</td>
+                    </tr>
+                    <tr id="3.7">
+                      <th scope="row">Comparing adjacent values</th>
+                      <td>To compare adjacent inputs, store the preceding input in a variable</td>
+                    </tr>
+                  </tbody>
+                </table>
+               
+                <!-- Table 4: Planning for writing array algorithm -->
+                <h6 class="mt-1">Table. Common array algorithms</h6>
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">Common array algorithm</th>
+                      <th scope="col">Definition</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr id="4.1">
+                      <th scope="row">Filling</th>
+                      <td>A loop fills an array with some values.</td>
+                    </tr>
+                    <tr id="4.2">
+                      <th scope="row">Sum and average value</th>
+                      <td>To compute an average, keep a total and a count of all values.</td>
+                    </tr>
+                    <tr id="4.3">
+                      <th scope="row">Maximum and minimum</th>
+                      <td>To find the largest value, update the largest value seen so far whenever you see a larger one.</td>
+                    </tr>
+                    <tr id="4.4">
+                      <th scope="row">Element separators</th>
+                      <td>To display the elements of an array, you usually want to separate them, often with commas or vertical
+                        lines.</td>
+                    </tr>
+                    <tr id="4.5">
+                      <th scope="row">Linear search</th>
+                      <td>A linear search inspects elements in sequence until a match is found.</td>
+                    </tr>
+                    <tr id="4.6">
+                      <th scope="row">Removing and element</th>
+                      <td>Remove an element at a given index position from the array values.</td>
+                    </tr>
+                    <tr id="4.7">
+                      <th scope="row">Inserting an element</th>
+                      <td>Use a temporary variable when swapping two elements.</td>
+                    </tr>
+                    <tr id="4.8">
+                      <th scope="row">Swapping elements</th>
+                      <td>Insert an element into an array by moving elements to the end of the array starting with the last one.
+                      </td>
+                    </tr>
+                    <tr id="4.9">
+                      <th scope="row">Copying arrays</th>
+                      <td>Use the Arrays.copyOf method to copy the elements of an array into a new array.</td>
+                    </tr>
+                    <tr id="4.10">
+                      <th scope="row">Reading input</th>
+                      <td>Add the inputs to an array until the end of the input has been reached.</td>
+                    </tr>
+                    <tr id="4.11">
+                      <th scope="row">Growing arrays</th>
+                      <td>Grow an array to hold all inputs.</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="https://avapaulino.github.io/ProceduralProgrammingPatterns/#examples">Patterns in procedural programming</a>
+                <h6>References</h6>
+                <p>Pauli Byckling and Jorma Sajaniemi. 2006. Roles of variables and programming skills improvement. SIGCSE Bull. 38, 1 (March 2006), 413–417. DOI:https://doi.org/10.1145/1124706.1121470</p>
+                <p>Sajaniemi, J. (2005, October). Roles of variables and learning to program. In Proc. 3rd Panhellenic Conf. Didactics of Informatics, Jimoyiannis A (ed) University of Peloponnese, Korinthos, Greece.</p>
+                <p>Sajaniemi, J., & Navarro-Prieto, R. (2005). Roles of Variables in Experts' Programming Knowledge. In PPIG (p. 13).</p>
+                <p>Orna Muller, David Ginat, and Bruria Haberman. 2007. Pattern-oriented instruction and its influence on problem decomposition and solution construction. In Proceedings of the 12th annual SIGCSE conference on Innovation and technology in computer science education (ITiCSE '07). Association for Computing Machinery, New York, NY, USA, 151–155. DOI:https://doi.org/10.1145/1268784.1268830</p>
+                <p>Orna Muller. 2005. Pattern oriented instruction and the enhancement of analogical reasoning. In Proceedings of the first international workshop on Computing education research (ICER '05). Association for Computing Machinery, New York, NY, USA, 57–67. DOI:https://doi.org/10.1145/1089786.1089792</p>
+              </div>
+            </div>
+            <!-- Writing Section -->
+            <div id="designing" class="row align-items-start">
+              <div class="col">
+                <h3>Writing</h3>
+                <h4>Designing</h4>
+                <h5>Definition</h5>
+                <p>Any attempt by the learner to plan a solution prior to writing by applying their knowledge of heuristics. This involves decomposing a problem by re-reading a problem prompt, drawing examples, sketching design tables, control flow, or expression tree diagrams, and generating subgoal annotations (ambiguous).</p>
+                <h5>Example #1 - Single Code Statement</h5>
+                <p><strong>Prompt:</strong> ... play who deliberately interferes with a moving ball has a two-stroke penalty.</p>
+                <p><strong>Tutor:</strong> How would you handle the two-stroke penalty when counting strokes?</p>
+                <p><strong>Student:</strong> Set count, an integer type variable to the addition of count and 2.</p>
+                <p><strong>Tutor:</strong> That is correct.</p>
+                <h5>Example #2 - Multiple Code Statement</h5>
+                <p><strong>Prompt:</strong> ... play who deliberately interferes with a moving ball has a two-stroke penalty.</p>
+                <p><strong>Tutor:</strong> How would you handle the two-stroke penalty when counting strokes?</p>
+                <p><strong>Student:</strong> Set count, an integer type variable to the addition of count and 2.</p>
+                <p><strong>Tutor:</strong> That is correct.</p>
+                <p><strong>Tutor:</strong> That two-stroke penalty would only be applied when that event has occured though. So what else would be needed to determine whether this is the case?</p>
+                <p><strong>Student:</strong> Set penalty, a Boolean flag to input received from the user and create a branching scenario when the condition returns true.</p>
+                <p><strong>Tutor:</strong> Otherwise if it's not, than only a single stroke would be applied to the scorecard. What other penalties should we account for?</p>
+                <h5>Instructional Methods</h5>
+                <p>Ways to promote the development of designing skills</p>
+                <p><strong>Solution:</strong> <br>a = 1;<br> b = 2; <br>c = 3; <br>a = b; <br>b = c; <br>c = a;</p>
+                <h6>Modeling</h6>
+                <p>Tutor performs a task so students can observe</p>
+                <p><strong>Tutor: </strong>To design a variable swap algorithm, you may write the following pseudocode:<br>Initialize a, b, c, integer type variables to 0<br>Set b and c to input read from console<br>Set a to b, b to c, and c to a<br>a holds a temporary value, enabling b and c to hold the most-wanted swapped values</p>
+                <h6>Coaching</h6>
+                <p>Tutor observes and facilitates while students perform a task</p>
+                <p><strong>Tutor: </strong>Write the pseudocode from the variable swap algorithm.</p>
+                <p><strong>Student: </strong>To design a variable swap algorithm, I would first do the following:<br>Initialize a, b, c, integer type variables to 0<br>Set b and c to input read from console<br>Set a to b, b to c, and c to a<br>a holds a temporary value, enabling b and c to hold the most-wanted swapped values</p>
+                <h6>Scaffolding</h6>
+                <p>Tutor provides support to help the student perform a task</p>
+                <p><strong>Tutor: </strong>Let's initialize a, b, and c, integer type variables. What variables would you set to input read from console?</p>
+                <p><strong>Student: </strong>b and c.</p>
+                <p><strong>Tutor: </strong>What is the role of a?.</p>
+                <p><strong>Student: </strong>To hold the first value from b, and pass it on to c.</p>
+                <h6>Articulation</h6>
+                <p>Tutor encourages students to verbalize their knowledge and thinking</p>
+                <p><strong>Tutor: </strong>Designing involves reading the problem prompt to note pertinent information, draw examples, and sketch diagrams to illustrate the steps involved in transforming an input to an output. It's common practice to do so by writing pseudocode or sketching a control flow diagram to decompose the different aspects of the problem. Have you tried sketching a control flow diagram?</p>
+                <h6>Reflection</h6>
+                <p>Tutor enables students to compare their performance with others</p>
+                <p><strong>Tutor: </strong>A common mistake is forgetting to assign the temporary value held in a to c due to the difficulty of tracing all 3 values as they change from one variable to the next.</p>
+                <h6>Exploration</h6>
+                <p>Tutor invites students to pose and solve their own problems</p>
+                <p><strong>Tutor: </strong> Can you list a temporary variable and two additional variables that will hold the swapped values in a design table?</p>
+                <h5>Instructional Content</h5>
+                <p>Types of representations required for designing</p>
+                <h6>Drawing Control Flow Diagrams</h6>
+                <p>Sketch using pen and paper the order of operations to highlight and revise the desired control flow and build an understanding for how data values should be transformed from a set of input and to ouput.</p>
+                <img src="assets/flowchart.JPG" height="350">
+                <br>
+                <a href="https://youtu.be/U0Sn6oJxOi8">Example Control Flow Diagram</a>
+                <h6>Writing Pseudocode Statements</h6>
+                <p>Write in natural language a description of statements for the program that are not ambiguous and to be translated later as code (i.e., proper syntax in any given language).</p>
+                <h6>Example Pseudocode Statements</h6>
+                <table class="table table-bordered d-inline">
+                  <thead>
+                    <tr>
+                      <th>
+                        Type
+                      </th>
+                      <th>
+                        Statement
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        Assignment Expressions
+                      </td>
+                      <td>
+                        Initialize someVar, an integer variable to 0<br>
+                        Declare someVar, an integer variable<br>
+                        Set someVar to 1
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Selection Statements
+                      </td>
+                      <td>
+                        If someVar<br>
+                          &emsp;... Add statement<br>
+                        Else If anotherVar<br>
+                          &emsp;... Add statement<br>
+                        Else <br>
+                          &emsp;... Add statement<br>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Loop Statements
+                      </td>
+                      <td>
+                        For i = 0 to length of someVar OR Repeat for the length of someVar <br>
+                        &emsp;... Add statement<br>
+                        While someVar <br>
+                        &emsp;... Add statement<br>
+                        Do<br>
+                        &emsp;... Add statement<br>
+                        While someVar <br>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Arrays
+                      </td>
+                      <td>
+                        Initialize someVar, an integer array to length of 10<br>
+                        Declare someVar, an integer array<br>
+                        Set someVar at index 2 to value of 10<br>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br>
+                <a href="https://www.javatpoint.com/pseudocode-java">Examples of Pseudocode #1</a>
+                <br>
+                <a href="https://www.unf.edu/~broggio/cop2221/2221pseu.htm">Examples of Pseudocode #2</a>
+                <h6>Parsons Problems</h6>
+                <p>A type of practice problem where the syntactic statements are already correctly written, but must be re-arranged by learners for the program to meet requirements and achieve a stated goal.</p>
+                <a href="https://js-parsons.github.io/">Example Parson Problems</a>
+                <h6>References</h6>
+                <p>Kathryn Cunningham, Shannon Ke, Mark Guzdial, and Barbara Ericson. 2019. Novice Rationales for Sketching and Tracing, and How They Try to Avoid It. In Proceedings of the 2019 ACM Conference on Innovation and Technology in Computer Science Education (ITiCSE '19). Association for Computing Machinery, New York, NY, USA, 37–43. DOI:https://doi.org/10.1145/3304221.3319788</p>
+                <p>Grady Booch. 2010. Why don't developers draw diagrams? In Proceedings of the 5th international symposium on Software visualization (SOFTVIS '10). Association for Computing Machinery, New York, NY, USA, 3–4. DOI:https://doi.org/10.1145/1879211.1879214</p>
+                <p>Kathryn Cunningham, Sarah Blanchard, Barbara Ericson, and Mark Guzdial. 2017. Using Tracing and Sketching to Solve Programming Problems: Replicating and Extending an Analysis of What Students Draw. In Proceedings of the 2017 ACM Conference on International Computing Education Research (ICER '17). Association for Computing Machinery, New York, NY, USA, 164–172. DOI:https://doi.org/10.1145/3105726.3106190</p>
+                <p>Lane, H. & Vanlehn, Kurt. (2005). Teaching the tacit knowledge of programming to noviceswith natural language tutoring. Computer Science Education. 15. 183-201. 10.1080/08993400500224286. </p>
+                <p>Nathaniel Weinman, Armando Fox, and Marti A. Hearst. 2021. Improving Instruction of Programming Patterns with Faded Parsons Problems. In Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems (CHI '21). Association for Computing Machinery, New York, NY, USA, Article 53, 1–4. DOI:https://doi.org/10.1145/3411764.3445228</p>
+                
+              </div>
+            </div>
+            <div id="generating" class="row align-items-start">
+              <div class="col">
+                <h3>Writing</h3>
+                <h4>Generating</h4>
+                <h5>Definition</h5>
+                <p>Any attempt by the learner to implement a solution during the writing task by applying their knowledge of heuristics. This involves constructing a solution by translating pseudocode (unambiguous) into code that adheres to styling guidelines as well as successfully compiles and meets all requirements.</p>
+                <h5>Example #1 - Single Code Statement</h5>
+                <p><strong>Pseudocode:</strong>Set count, an integer type variable to the addition of count and 2.</p>
+                <p><strong>Tutor:</strong> Can you try writing the assignment operation for the count variable?</p>
+                <p><strong>Student:</strong> Sure, let me try.</p>
+                <p><strong>Code:</strong> <br>count = count + 2;</p>
+                <p><strong>Tutor:</strong> That is correct.</p>
+                <h5>Example #2 - Multiple Code Statement</h5>
+                <p><strong>Pseudocode:</strong><br>If penalty<br>&emsp;Set count, an integer type variable to the addition of count and 2.</p>
+                <p><strong>Tutor:</strong> Can you try writing the selection algorithm to update stroke in case of a penalty?</p>
+                <p><strong>Student:</strong> Sure, let me try.</p>
+                <p><strong>Code:</strong><br>if(penalty){ <br>&emsp;count = count + 2;<br>}</p>
+                <p><strong>Tutor:</strong> That is correct.</p>
+                <h5>Instructional Methods</h5>
+                <p>Ways to promote the development of generating skills</p>
+                <p><strong>Solution:</strong> <br>a = 1;<br> b = 2; <br>c = 3; <br>a = b; <br>b = c; <br>c = a;</p>
+                <h6>Modeling</h6>
+                <p>Tutor performs a task so students can observe</p>
+                <p><strong>Tutor: </strong>To implement a variable swap algorithm, you may translate the following code from pseudocode:<br></p>
+                <p><strong>Code:</strong> <br>a = 1;<br> b = 2; <br>c = 3; <br>a = b; <br>b = c; <br>c = a;</p>
+                <h6>Coaching</h6>
+                <p>Tutor observes and facilitates while students perform a task</p>
+                <p><strong>Tutor: </strong>Write the code from the variable swap algorithm.</p>
+                <p><strong>Student: </strong>To implement a variable swap algorithm, I would first do the following:<br></p>
+                <p><strong>Code:</strong> <br>a = 1;<br> b = 2; <br>c = 3; <br>a = b; <br>b = c; <br>c = a;</p>
+                <h6>Scaffolding</h6>
+                <p><strong>Tutor: </strong>If I were to write the initialization statements for a, b, and c, how would you write the assignment operations?</p>
+                <p><strong>Student: </strong>I would write the following<br></p>
+                <p><strong>Code:</strong> <br>a = b; <br>b = c; <br>c = a;</p>
+                <h6>Articulation</h6>
+                <p>Tutor encourages students to verbalize their knowledge and thinking</p>
+                <p><strong>Tutor: </strong>Implementing a solution involves writing code from pseudocode or reviewing it to ensure it adheres to styling guidelines.</p>
+                <h6>Reflection</h6>
+                <p>Tutor enables students to compare their performance with others</p>
+                <p><strong>Tutor: </strong>A common mistake is naming the temporary holder variable in a way that is simmilar to those holding the most-wanted values.</p>
+                <h6>Exploration</h6>
+                <p>Tutor invites students to pose and solve their own problems</p>
+                <p><strong>Tutor: </strong> Can you re-write the variable names using the camel case convention to better reflect their function?</p>
+                <h5>Instructional Content</h5>
+                <p>Types of representations required for generating</p>
+                <h6>Example-Problem Pairs</h6>
+                <p>A worked example of a solution to a problem to study just prior to solving a similar problem provides the learner with an analogy available while solving the problem. When having to actively solve a problem without the benefit of an analoguous example, most attentional resources in working memory are used up for designing a solution rather than generating code.</p>
+                <p>Interleaving analoguous examples and problems involve transfer of skills in 3 different ways (among others):</p>
+                <p><strong>Isomorphic Transfer:</strong> The problem-solving context (i.e., cover story) between problems is the same and only the values in the problem are different.</p>
+                <p><strong>Contextual Transfer:</strong> The problem-solving procedure between problems is the same and the contexts of the problem are different. For example, transferring knowledge from writing a program to find the average value of a waiter's tips to writing a program to find the average rainfall is contextual transfer, therefore the general steps of the procedure are the same.</p>
+                <p><strong>Procedural Transfer:</strong> The type of problem is the same and the problem-solving procedures are different. For example, transferring knowledge from writing a while loop to find the sum of values to writing a while loop to find the average of values is procedural transfer. The steps of the procedure differ based on the components of the problem (summing or averaging), but the type of problem (using a while loop) is the same.</p>
+                <p>Steps involved in creating example-problem pairs:</p>
+                <p>Step 1: Make the example or the problem:</p>
+                <p>The height of building A is 10 meters. If the house next to it has 2 times the height of building A, how tall is the house?</p>
+                <p>Step 2: Solve the problem with the complete procedure and as clear as possible. This will serve as an example.</p>
+                <p>Step 3: Introduce transfer, for instance change the quantity in the problem or data type to modify the isomorphic properties.</p>
+                <p>The height of building A is 9.78 meter. If the house next to it has 0.26 times the height of building A, how tall is the house?</p>
+                <p>By using an analogy, students will realize that because the problems are the same (except the quantitites), the solution procedure must also be the same. This problem prompt can now be used as a practice opportunity to provide feedback. It's considered good practice to vary the level of difficulty by modifying isomorphic, contextual, and procedural aspects of the problem for students to develop their analogical thinking.</p>
+                <p>Although cover stories or surface details may make it difficult for students to identify the structural parts of problem-solving procedures that apply to similar problems, it is essential for teaching novices because abstract instruction makes it too difficult for them to grasp, allowing them to make connections to their prior knowledge. The best way to help students transfer their knowledge given changes in the conditions outlined above is to teach them how transfer their knowledge - practice and feedback on novel problem solving and how to recognize similarities between novel problems adn problems that they know how to solve.</p>
+                <p>Also take into account the following sources of transfer:</p>
+                <p><strong>Modality Transfer:</strong> Transfer between medium of instruction and application at the macro-level (e.g., auditory instruction vs. written assignment) or micro-level (e.g., instructing based on tracing, reading, or writing code vs. testing based on tracing, reading, or writing code).</p>
+                <p><strong>Temporal Context Transfer:</strong> Transfer across time (e.g., weeks, months, semesters). Commonly referred to as retention. Because synaptic connections fade over time (i.e., ability to recall information decays), the time between solving problems can affect transfer.</p>
+                <h6>Faded Worked Examples</h6>
+                <p>Another approach is to provide a worked example where a single or multiple step is removed from the solution and learners are prompted to fill the partially completed solution or missing step.</p>
+                <p>This also benefits skill transfer by focusing attentional resources to the most relevant aspect of generating code while learning a novel procedure for instance.</p>
+                <p>To scaffold the process of generating code, the faded step may be described in the form of pseudocode, prompting the learner to translate it to code.</p>
+                <p>Also, you may considering adding subgoal annotations to support students to recognize similarities or variable role annotations:</p>
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <!--<th scope="col">Evaluate</th>-->
+                      <th scope="col">Write</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <!--<td>
+                        <p>Subgoals for evaluating (assignment) expressions</p>
+                        <ol>
+                          <li>Determine whether data type of expression is compatible with data type of variable</li>
+                          <li>Update variable for pre based on side effect</li>
+                          <li>Solve arithmetic equation</li>
+                          <li>Check data type of copied value against data type of variable</li>
+                          <li>Update variable for post based on side effect</li>
+                        </ol>
+                      </td>-->
+                      <td>
+                        <p>Subgoals for writing expressions</p>
+                        <ol>
+                          <li>Determine expression that will yield variable</li>
+                          <li>Determine data type and name of variable and data type of expression</li>
+                          <li>Determine arithmetic equation with operators</li>
+                          <li>Determine expression components</li>
+                          <li>Operators and operands must be compatible</li>
+                        </ol>
+                      </td>
+                    </tr>
+                    <tr>
+                      <!--<td>
+                        <p>Subgoals for evaluating selection statements</p>
+                        <ol>
+                          <li>Diagram which statements go together</li>
+                          <li>For if statement, determine whether expression is true or false</li>
+                          <li>If true - follow true branch, if false - follow else branch or do nothing if no else branch</li>
+                        </ol>
+                      </td>-->
+                      <td>
+                        <p>Subgoals for writing selection statements</p>
+                        <ol>
+                          <li>Define how many mutually eclusive paths are needed</li>
+                          <li>Order from most restrictive/selective group to least restrictive</li>
+                          <li>Write if statement with Boolean expression</li>
+                          <li>Follow with true bracket including action</li>
+                          <li>Follow with else bracket</li>
+                          <li>Repeat until all groups and actions are accounted for</li>
+                        </ol>
+                      </td>
+                    </tr>
+                    <tr>
+                      <!--<td>
+                        <p>Subgoals for evaluating loops</p>
+                        <ol>
+                          <li>Identify loop parts</li>
+                          <ol>
+                          <li>Determine start condition</li>
+                          <li>Determine update condition</li>
+                          <li>Determine termination condition</li>
+                          <li>Determine body that is repeated</li>
+                        </ol>
+                        </ol>
+                        <ol>
+                          <li>Trace the loop</li>
+                          <ol>
+                          <li>For every iteration of loop, write down values</li>
+                        </ol>
+                        </ol>
+                      </td>-->
+                      <td>
+                        <p>Subgoals for writing loops</p>
+                        <ol>
+                          <li>Determine purposes of loop</li>
+                          <ol>
+                          <li>Pick a loop structure (while, for, do_while)</li>
+                        </ol>
+                          <li>Define and initialize variables</li>
+                          <li>Determine termination condition</li>
+                          <ol>
+                          <li>Invert termination conditions to continuation condition</li>
+                        </ol>
+                          <li>Write loop body</li>
+                          <ol>
+                          <li>Update loop control variable to reach termination</li>
+                        </ol>
+                        </ol>
+                      </td>
+                    </tr>
+                    <tr>
+                      <!--<td>
+                        <p>Subgoals for calling or tracing methods</p>
+                        <ol>
+                          <li>Classify methods as static method or instance method</li>
+                          <ol>
+                          <li>If static, use the class name</li>
+                          <li>If instance, must have or create an instance</li>
+                          </ol>
+                          <li>Write (instance/class) dot method name and ()</li>
+                          <li>Determine whether parameter(s) are appropriate</li>
+                          <ol>
+                          <li>Numer of parameters passed must match method declaration</li>
+                          <li>Data types of parameters passed must match method declaration (or be assignable)</li>
+                          </ol>
+                          <li>Determine what the method will return (if anything: data type, void, print, change state of object) and where it will be stored (nowhere, somewhere)</li>
+                          <li>Evaluate right hand side of assignment (if there is one). Value is dependent on method's purpose.</li>
+                        </ol>
+                      </td>-->
+                      <td>
+                        <p>Subgoals for writing methods</p>
+                        <ol>
+                          <li>Define method header based on problem</li>
+                          <li>Define return statement at the end</li>
+                          <li>Define method body/logic</li>
+                          <ol>
+                          <li>Determine types of logic (expression, selection, loop, etc.)</li>
+                          <li>Define internal variables</li>
+                          <li>Write statements</li>
+                        </ol>
+                        </ol>
+                      </td>
+                    </tr>
+                    <tr>
+                      <!--<td>
+                        <p>Subgoals for using objects (creating instances)</p>
+                        <ol>
+                          <li>Declare variable of appropriate class datatype</li>
+                          <li>Assign to variable: keyword new, followed by class name, followed by ()</li>
+                          <li>Determine whether parameter(s) are appropriate (API)</li>
+                          <ol>
+                            <li>Number of parameters</li>
+                            <li>Data types of the parameters</li>
+                          </ol>
+                        </ol>
+                      </td>-->
+                      <td>
+                        <p>Subgoals for writing classes (associated rule sheets)</p>
+                        <ol>
+                          <li>Name it</li>
+                          <li>Differentiate class-level (static) vs. instance/object-level variables</li>
+                          <li>Differentiate class-level (static) vs. instance/objbect behaviors/methods</li>
+                          <li>Define instance variables (that you want to be interrelated)</li>
+                          <li>Define class variables (static) as needed</li>
+                          <li>Create constructor (behavior) that creates initial state of object</li>
+                          <li>Create 1 accessor and 1 mutator behaviors per attribute</li>
+                          <li>Write toString method</li>
+                          <li>Write equals method</li>
+                          <li>Create additional methods as needed</li>
+                        </ol>
+                      </td>
+                    </tr>
+                    <tr>
+                      <!--<td>
+                        <p>Subgoals for evaluating arrays</p>
+                        <ol>
+                          <li>Set up array from 0 to size - 1</li>
+                          <li>Evaluate data type of statements against array</li>
+                          <li>Trace statements, updating slots as you go</li>
+                          <ol>
+                            <li>Remember assignment subgoals</li>
+                          </ol>
+                        </ol>
+                      </td>-->
+                      <td>
+                        <p>Subgoals for writing arrays</p>
+                        <ol>
+                          <li>Data type plus []</li>
+                          <li>Variable name = {initializer list}, or new datatype [size]</li>
+                        </ol>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h6>Example-Counter Example Block</h6>
+                <p>A special case for worked example to illustrate adherence to code clarity and quality guidelines. An example shows the proper way to document code for instance, while the counter example illustrates common errors such as overelaborate comments, missing method and class documentation, and so on.</p>
+                <h6>References</h6>
+                <p>Ben Skudder and Andrew Luxton-Reilly. 2014. Worked examples in computer science. In Proceedings of the Sixteenth Australasian Computing Education Conference - Volume 148 (ACE '14). Australian Computer Society, Inc., AUS, 59–64.</p>
+                <p>Gray, Simon, Caroline St. Clair, Richard James, and Jerry Mead. "Suggestions for graduated exposure to programming concepts using fading worked examples." In Proceedings of the third international workshop on Computing education research, pp. 99-110. 2007.</p>
+                <p>Decker, A., & Morrison, B., & Margulieux, L. E. (2019, June), Board 37: Developing Subgoal Labels for Imperative Programming to Improve Student Learning Outcomes Paper presented at 2019 ASEE Annual Conference & Exposition , Tampa, Florida. 10.18260/1-2--32333</p>
+                <p>Robins, A. V., Margulieux, L. E., & Morrison, B. B. (2019). Cognitive sciences for computing education. In S. A. Fincher & A. V. Robins (Eds.) The Cambridge Handbook of Computing Education Research. Cambridge, UK: Cambridge University Press, [231-275].</p>
+                <p>Barnett, S. M., & Ceci, S. J. (2002). When and where do we apply what we learn?: A taxonomy for far transfer. Psychological Bulletin, 128(4), 612–637. https://doi.org/10.1037/0033-2909.128.4.612</p>
+                <p>Pastoriko, F & Retnowati, Endah. (2019). How to Create Isomorphic Example-Problem Pairs for Facilitating Analogical Thinking. Journal of Physics: Conference Series. 1397. 012083. 10.1088/1742-6596/1397/1/012083. </p>
+                <p>Nathaniel Weinman, Armando Fox, and Marti A. Hearst. 2021. Improving Instruction of Programming Patterns with Faded Parsons Problems. In Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems (CHI '21). Association for Computing Machinery, New York, NY, USA, Article 53, 1–4. DOI:https://doi.org/10.1145/3411764.3445228</p>
+                <p>Pirolli, P., & Recker, M.M. (1994). Learning Strategies and Transfer in the Domain of Programming. Cognition and Instruction, 12, 235-275.</p>
+              </div>
+            </div>
+            <!-- Revising Section -->
+            <div id="revisingtask" class="row align-items-start">
+              <div class="col">
+                <h3>Revising</h3>
+                <h4>Monitoring Task Understanding</h4>
+                <h5>Definition</h5>
+                <p>Any attempt by the learner to evaluate their understanding of the task by reviewing information information from the problem prompt adn reasoning about the steps involved in translating an input to an output.</p>
+                <h5>Instructional Methods</h5>
+                <p>Ways to promote the development of metacognitive monitoring skills</p>
+                <p><strong>Prompt:</strong> ... the program should return an array that swap numbers.</p>
+                <h6>Modeling</h6>
+                <p>Tutor performs a task so students can observe</p>
+                <p><strong>Tutor: </strong>The problem prompt suggests that the program should invert in order, including whole and floating-point numbers. An array with values including 5 and 6 should be processed and the array returned should include 6 and 5, while 5.0 and 6.0 should be inversed to 6.0 and 5.0.</p>
+                <h6>Coaching</h6>
+                <p>Tutor observes and facilitates while students perform a task</p>
+                <p><strong>Tutor: </strong>What is the goal of the program? If the program receives as input an array of 5 and 6, what is returned to the caller of the method?</p>
+                <h6>Scaffolding</h6>
+                <p>Tutor provides support to help the student perform a task</p>
+                <p><strong>Tutor: </strong>Since the goal of the program is to invert an array of 2 numbers, if an array of 5 and 6 is passed as a parameter, what is returned to the caller of the method?</p>
+                <h6>Articulation</h6>
+                <p>Tutor encourages students to verbalize their knowledge and thinking</p>
+                <p><strong>Tutor: </strong>Always re-read the problem prompt 3 times and note down on paper any pertinent information mentioned in the prompt as well as generate additional test cases to reason about the steps involved in the control flow.</p>
+                <h6>Reflection</h6>
+                <p>Tutor enables students to compare their performance with others</p>
+                <p><strong>Tutor: </strong>A common mistake is to read the prompt too quickly and miss important information or neglecting to analyze a test case that is indicative of a branching scenario in the control flow of the program.</p>
+                <h6>Exploration</h6>
+                <p>Tutor invites students to pose and solve their own problems</p>
+                <p><strong>Tutor: </strong> Have you considered drawing a control flow diagram from the example that was drawn?</p>
+                <h5>Instructional Content</h5>
+                <p>Types of representations required for metacognitive monitoring skills</p>
+                <h6>Note Solution Requirements</h6>
+                <p>Note pertinent information mentioned in the problem prompt that is pertinent to building a solution.</p>
+                <h6>Draw Examples</h6>
+                <p>Generate additional test cases by imagining a novel set of input values and predicting the resulting output.</p>
+                <h6>References</h6>
+                <p>Kathryn Cunningham, Sarah Blanchard, Barbara Ericson, and Mark Guzdial. 2017. Using Tracing and Sketching to Solve Programming Problems: Replicating and Extending an Analysis of What Students Draw. In Proceedings of the 2017 ACM Conference on International Computing Education Research (ICER '17). Association for Computing Machinery, New York, NY, USA, 164–172. DOI:https://doi.org/10.1145/3105726.3106190</p>
+                <p>Grady Booch. 2010. Why don't developers draw diagrams? In Proceedings of the 5th international symposium on Software visualization (SOFTVIS '10). Association for Computing Machinery, New York, NY, USA, 3–4. DOI:https://doi.org/10.1145/1879211.1879214</p>
+                <p>Kathryn Cunningham, Shannon Ke, Mark Guzdial, and Barbara Ericson. 2019. Novice Rationales for Sketching and Tracing, and How They Try to Avoid It. In Proceedings of the 2019 ACM Conference on Innovation and Technology in Computer Science Education (ITiCSE '19). Association for Computing Machinery, New York, NY, USA, 37–43. DOI:https://doi.org/10.1145/3304221.3319788</p>
+                <p>James Prather, Raymond Pettit, Brett A. Becker, Paul Denny, Dastyni Loksa, Alani Peters, Zachary Albrecht, and Krista Masci. 2019. First Things First: Providing Metacognitive Scaffolding for Interpreting Problem Prompts. In Proceedings of the 50th ACM Technical Symposium on Computer Science Education (SIGCSE '19). Association for Computing Machinery, New York, NY, USA, 531–537. DOI:https://doi.org/10.1145/3287324.3287374</p>
+                </div>
+            </div>
+            <div id="revisingcode" class="row align-items-start">
+              <div class="col">
+                <h3>Revising</h3>
+                <h4>Monitoring Solution</h4>
+                <h5>Definition</h5>
+                <p>Any attempt by the learner to evaluate a solution in terms of adherence to styling guidelines for code clarity and quality, disambiguate and search for the source of compilation errors, runtime exceptions, and logic errors to reduce discrepancies between actual and expected output.</p>
+                <h5>Instructional Methods</h5>
+                <p>Ways to promote the development of metacognitive monitoring skills</p>
+                <p><strong>Prompt:</strong> ... the program should return an array that swap numbers.</p>
+                <h6>Modeling</h6>
+                <p>Tutor performs a task so students can observe</p>
+                <p><strong>Tutor: </strong>The expected output of the program is [5, 6] but the actual output is 5, 6. Let's try the toString method of the Arrays class at the print statement.</p>
+                <h6>Coaching</h6>
+                <p>Tutor observes and facilitates while students perform a task</p>
+                <p><strong>Tutor: </strong>What is the actual output of the program? How is that different from the expected output as described by the test case?</p>
+                <h6>Scaffolding</h6>
+                <p>Tutor provides support to help the student perform a task</p>
+                <p><strong>Tutor: </strong>There isn't any error messages from the compiler nor is there any runtime exceptions; but the return value seems to be different from the expected one - do you have any suggestion on how to fix this bug?</p>
+                <h6>Articulation</h6>
+                <p>Tutor encourages students to verbalize their knowledge and thinking</p>
+                <p><strong>Tutor: </strong>Errors fall in one of three categories either compilation errors, runtime exceptions, or logic errors. After fixing al lthe bugs, you can focus on the quality and clarity of your code.</p>
+                <h6>Reflection</h6>
+                <p>Tutor enables students to compare their performance with others</p>
+                <p><strong>Tutor: </strong>Logic errors are common mistakes, try to draw a control flow diagram using the input values in the test case that is not met to trace the steps that are necessary to translate the correct output.</p>
+                <h6>Exploration</h6>
+                <p>Tutor invites students to pose and solve their own problems</p>
+                <p><strong>Tutor: </strong> Have you tried to draw a control flow diagram to find what is the cause of the error?</p>
+                <h5>Instructional Content</h5>
+                <p>Types of representations required for metacognitive monitoring skills</p>
+                <h6>Faulty Solutions</h6>
+                <p>Practice problems where a completed solution has an error (on purpose) for the learners to find and fix.</p>
+                <h6>Example-Counter Example Pair</h6>
+                <p>Compare and contrast code example to develop standards for adherence to styling guidelines, including the quality and clarity of solutions.</p>
+                <h6>Common Error Messages</h6>
+                <p>Analyze examples of common error messages from the compiler thrown in the case of compilation errors and runtime exceptions.</p>
+                <h6>Control Flow Diagram</h6>
+                <p>Trace program execution for a specific test case to diagnose the cause of logic errors.</p>
+                <h6>References</h6>
+                <p>Kathryn Cunningham, Sarah Blanchard, Barbara Ericson, and Mark Guzdial. 2017. Using Tracing and Sketching to Solve Programming Problems: Replicating and Extending an Analysis of What Students Draw. In Proceedings of the 2017 ACM Conference on International Computing Education Research (ICER '17). Association for Computing Machinery, New York, NY, USA, 164–172. DOI:https://doi.org/10.1145/3105726.3106190</p>
+                <p>Li, C., Chan, E., Denny, P., Luxton-Reilly, A., & Tempero, E. (2019, January). Towards a framework for teaching debugging. In Proceedings of the Twenty-First Australasian Computing Education Conference (pp. 79-86).</p>
+                <p>McCauley, R., Fitzgerald, S., Lewandowski, G., Murphy, L., Simon, B., Thomas, L., & Zander, C. (2008). Debugging: a review of the literature from an educational perspective. Computer Science Education, 18(2), 67-92.</p>
+                <p>Bottcher, Axel; Thurner, Veronika; Schlierkamp, Kathrin; Zehetmeier, Daniela (2016). [IEEE 2016 IEEE Frontiers in Education Conference (FIE) - Eire, PA, USA (2016.10.12-2016.10.15)] 2016 IEEE Frontiers in Education Conference (FIE) - Debugging students' debugging process. , (), 1–7. doi:10.1109/fie.2016.7757447</p>
+              </div>
+            </div>
+            <!-- Q & A Section -->
+            <div id="answeringQuestions" class="row align-items-start">
+              <h3>Answering Questions</h3>
+                <h5>Definition</h5>
+                <p>Answering questions in Teams is desirable to avoid overloading hours associated for in-person/online synchronous sessions. Questions asked by students typically fall in one of the four categories, please refer to the example reply as a guideline of how to write an answer.</p>
+                <h5>Example #1 - Active Question</h5>
+                <p>Request for help that does not display reasoning and is not framed in what the student knows or has already tried.</p>
+                <p><strong>Student:</strong> My program is supposed to print the message same as the video recording of the lecture, but then nothing happens when clicking the play button. Any way to fix this?</p>
+                <p>Teach them how to formulate constructive questions.</p>
+                <p><strong>Tutor:</strong> I would recommend elaborating further in your question by making explicit the previous attempt that you have taken to solve the problem, as well as explain how the actual output of the program is different from what you expected. If it is suitable, copy/paste a brief snippet of the output obtained in the IntelliJ console or Mimir test case/the current instructions included in your program. For students reading this thread, remember to avoid copying and pasting code snippets from the forum due to the plagiarism detection in Mimir. If you are uncomfortable sharing your solution in this thread, share your screen during office hour sessions with TAs or the course instructor.</p>
+                <h5>Example #2 - Constructive Question</h5>
+                <p>Questions that reflect students’ reasoning or attempts to construct a solution to the problem.</p>
+                <p><strong>Student:</strong> How does one define “strongly typed?” based on that why is Java a strongly typed language? I can’t find any reference to this in the textbook.</p>
+                <p>Elaborate/correct misconceptions and suggest a learning strategy.</p>
+                <p><strong>Tutor:</strong> Java is a strongly typed programming language because every variable must be declared with a data type, such as integer, character, floating point, and so on. This is different from other languages like JavaScript where only a single keyword (var) is used to declare variable. I recommend W3school as a useful reference on the notion of data type: https://www.w3schools.com/java/java_data_types.asp. </p>
+                <h5>Example #3 - Logistical Question</h5>
+                <p>Questions on course policies, schedules, and assignment submission mechanisms. Not necessarily related to computer science content.</p>
+                <p><strong>Student:</strong> On the syllabus, the office hours for TA’s aren’t listed. Where can I find them?</p>
+                <p> Step 1: Check the syllabus/Brightspace course content and make your interpretation if the answer is not ambiguous.</p>
+                <p><strong>Tutor:</strong> Navigate to the Brightspace course section and select Content > Office Hours.</p>
+                <p> Step 2: If the question is ambiguous, quickly search through the Brightspace discussion forum or previous emails to draw an analogy from a similar question-answer thread. Refer the student to this thread or copy the previous answer verbatim. </p>
+                <p> Step 3: Formulate a tentative answer and send to the Head TA for approval in Microsoft Teams. The Head TA and Instructor will consult on a weekly basis/separate chat thread and if required, make further inquiries with other Faculty to ensure consistency and fairness in policy making.</p>
+                <h5>Example #4 - Content Clarification</h5>
+                <p>Request for additional information on project assignments. Does not involve a question on the student's own problem-solving work.</p>
+                <p><strong>Student:</strong> I'm a bit confused on what we are doing exactly. Are we asking the user to input all of the data and then after they've input all of the data, then we format it. Or are we making a program that formats data that has already been inputted?</p>
+                <p>Ensure that other students can recognize the assignment identifier (e.g., PoD 2.1), clarify or paraphrase and allude to helpful features in Mimir.</p>
+                <p><strong>Tutor:</strong> In the PoD 2.1 assignment, the input instructions are not currently provided in the solution to the problem. I always recommend to read instructions slower than typical reading speed, and to do this three times before planning a solution. You’ll notice it is mentioned on line (add quote). You can add the input instructions in the code editor window between the commented section startling on line (add number).</p>
+                <h6>General Guidelines for Questions About Assignments</h6>
+                <p>Code writing exercises assess a range of different skills in solving problems and reasoning. My recommendation is to support students to evaluate their understanding of the task and read a program without any restriction, including reinterpreting problem prompts, highlighting important information, as well as tracing and explaining any aspects of student-produced solutions. In terms of reflecting on the quality and/or functionality of the solution, I also encourage you to point out areas where the style of their code can be improved, disambiguate error messages related to syntax errors or runtime exceptions, as well as to assist in searching and locating the source of logic errors when debugging by tracing or sketching the control flow. In terms of supporting students to write their solutions, they're are restrictions in place to ensure academic integrity and fairness of the assessment. Any instructional content that pertains to desiging code blocks of the solution may be sketched while discussing with an individual student given that it reflects their own work, but will be removed from any Teams post while moderating the chat. Furthermore, hints can be provided as a form of scaffolding when students need help in terms of single code statements, either in the form of subgoal annotations, pseudocode (use generic variable names, like someVar), or a reference to the course cheatsheet. Any direct quote that pertains to aspects of a solution to a problem will be taken down from Teams while moderating course discussions. This policy ensures the validity and reliability of the assessment and is meant to discourage "gaming" office hours and academic integrity violations.</p>
+              </div>
+            <!-- Marking Section -->
+            <div id="marking" class="row align-items-start">
+              <h3>Marking Assignments</h3>
+              <h5>Definition</h5>
+              <p>Answering questions in Teams is desirable to avoid overloading hours associated for in-person/online synchronous sessions. Questions asked by students typically fall in one of the four categories, please refer to the example reply as a guideline of how to write an answer.</p>
+              <p>Marking assignments in terms of the quality and clarity of code is often conducted in the case of assignments (to remove marks from a functional solution) or practicums (to add marks in case of solutions that fail to pass all test cases).</p>
+              <p>You'll find <a href="assets/Marking Assignments.pdf">this guide</a> as a useful reference on how to provide feedback in Mimir as well as a <a href="https://ericpoitras.github.io/CSCI1105_StyleGuidelines/">site</a> related to the grading rubric categories that you may share with students. Worked examples (and counter examples) of different aspects for code quality and clarity are introduced gradually throughout the course, so consult with the head TA or instructor in how to take these into consideration in a gradual manner.</p>
+            </div>
+            <div id="citation" class="col">
+              <h3>Citation</h3>
+              <p>Poitras, E. (2021). Programming Language Learning. https://ericpoitras.github.io/proglanglearn/.</p>
+            </div>
+            <div id="acknowledgement" class="col">
+              <br>
+              <h3>Acknowledgements</h3>
+              <p style="text-align: justify;">This website is supported in part by funding from the Social Sciences and Humanities Research Council.</p>
+                <img src="assets/sshrc-fip-full-color-eng.png" height="75px">
+            </div>
+            <!--<div id="footer" class="row justify-content-end">
+              <div class="col-auto">
+                <button type="button" class="btn btn-primary align-right">Next</button>
+              </div>
+            </div>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+  <script>
+    const linkIntro = document.getElementById("linkIntro");
+    const linkComprehension = document.getElementById("linkComprehension");
+    const linkQuestion = document.getElementById("linkQuestion");
+    const linkStyle = document.getElementById("linkStyle");
+    const linkTracing = document.getElementById("linkTracing");
+    const linkExplaining = document.getElementById("linkExplaining");
+    const linkDesigning = document.getElementById("linkDesigning");
+    const linkGenerating = document.getElementById("linkGenerating");
+    const linkRevisingTask = document.getElementById("linkRevisingTask");
+    const linkRevisingCode = document.getElementById("linkRevisingCode");
+    const linkAcknowledgement = document.getElementById("linkAcknowledgement");
+    const linkCitation = document.getElementById("linkCitation");
+
+    const sectionIntro = document.getElementById("introduction");
+    const sectionComprehension = document.getElementById("comprehension");
+    const sectionQuestion = document.getElementById("answeringQuestions");
+    const sectionStyle = document.getElementById("marking");
+    const sectionTracing = document.getElementById("tracing");
+    const sectionExplaining = document.getElementById("explaining");
+    const sectionDesigning = document.getElementById("designing");
+    const sectionGenerating = document.getElementById("generating");
+    const sectionRevisingTask = document.getElementById("revisingtask");
+    const sectionRevisingCode = document.getElementById("revisingcode");
+    const sectionAcknowledgement = document.getElementById("acknowledgement");
+    const sectionCitation = document.getElementById("citation");
+
+    linkIntro.addEventListener("click", function(){navigateSection("intro")}, false);
+    linkComprehension.addEventListener("click", function(){navigateSection("comprehension")}, false);
+    linkQuestion.addEventListener("click", function(){navigateSection("question")}, false);
+    linkStyle.addEventListener("click", function(){navigateSection("style")}, false);
+    linkTracing.addEventListener("click", function(){navigateSection("tracing")}, false);
+    linkExplaining.addEventListener("click", function(){navigateSection("explaining")}, false);
+    linkDesigning.addEventListener("click", function(){navigateSection("designing")}, false);
+    linkGenerating.addEventListener("click", function(){navigateSection("generating")}, false);
+    linkRevisingTask.addEventListener("click", function(){navigateSection("revisingtask")}, false);
+    linkRevisingCode.addEventListener("click", function(){navigateSection("revisingcode")}, false);
+    linkAcknowledgement.addEventListener("click", function(){navigateSection("acknowledgement")}, false);
+    linkCitation.addEventListener("click", function(){navigateSection("citation")}, false);
+
+    resetSectionView();
+    sectionIntro.style.display = "block";
+
+    function navigateSection(section){
+      resetSectionView();
+      if(section == "intro"){
+        sectionIntro.style.display = "block";
+      }else if(section == "comprehension"){
+        sectionComprehension.style.display = "block";
+      }else if(section == "question"){
+        sectionQuestion.style.display = "block";
+      }else if(section == "style"){
+        sectionStyle.style.display = "block";
+      }else if(section == "tracing"){
+        sectionTracing.style.display = "block";
+      }else if(section == "explaining"){
+        sectionExplaining.style.display = "block";
+      }else if(section == "designing"){
+        sectionDesigning.style.display = "block";
+      }else if(section == "generating"){
+        sectionGenerating.style.display = "block";
+      }else if(section == "revisingtask"){
+        sectionRevisingTask.style.display = "block";
+      }else if(section == "revisingcode"){
+        sectionRevisingCode.style.display = "block";
+      }else if(section == "acknowledgement"){
+        sectionAcknowledgement.style.display = "block";
+      }else if(section == "citation"){
+        sectionCitation.style.display = "block";
+      }
+    }
+
+    function resetSectionView(){
+      sectionIntro.style.display = "none";
+      sectionComprehension.style.display = "none";
+      sectionQuestion.style.display = "none";
+      sectionStyle.style.display = "none";
+      sectionTracing.style.display = "none";
+      sectionExplaining.style.display = "none";
+      sectionDesigning.style.display = "none";
+      sectionGenerating.style.display = "none";
+      sectionRevisingTask.style.display = "none";
+      sectionRevisingCode.style.display = "none";
+      sectionAcknowledgement.style.display = "none";
+      sectionCitation.style.display = "none";
+    }
+  </script>
+</html>
